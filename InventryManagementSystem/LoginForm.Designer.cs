@@ -40,6 +40,7 @@
             this.checkBoxPass = new System.Windows.Forms.CheckBox();
             this.lblClear = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -78,9 +79,11 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(12, 216);
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(12, 237);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(299, 20);
+            this.txtName.Size = new System.Drawing.Size(299, 26);
             this.txtName.TabIndex = 1;
             // 
             // label1
@@ -88,7 +91,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(12, 197);
+            this.label1.Location = new System.Drawing.Point(12, 218);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 16);
             this.label1.TabIndex = 2;
@@ -97,9 +100,11 @@
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(12, 278);
+            this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.Location = new System.Drawing.Point(12, 294);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(299, 20);
+            this.txtPass.Size = new System.Drawing.Size(299, 26);
             this.txtPass.TabIndex = 3;
             this.txtPass.UseSystemPasswordChar = true;
             // 
@@ -110,9 +115,9 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLogin.Location = new System.Drawing.Point(12, 317);
+            this.btnLogin.Location = new System.Drawing.Point(12, 365);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(299, 35);
+            this.btnLogin.Size = new System.Drawing.Size(299, 39);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -122,7 +127,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(94, 86);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(125, 99);
+            this.pictureBox1.Size = new System.Drawing.Size(125, 89);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -132,7 +137,7 @@
             this.checkBoxPass.AutoSize = true;
             this.checkBoxPass.BackColor = System.Drawing.Color.Transparent;
             this.checkBoxPass.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBoxPass.Location = new System.Drawing.Point(183, 358);
+            this.checkBoxPass.Location = new System.Drawing.Point(12, 326);
             this.checkBoxPass.Name = "checkBoxPass";
             this.checkBoxPass.Size = new System.Drawing.Size(102, 17);
             this.checkBoxPass.TabIndex = 7;
@@ -145,7 +150,7 @@
             this.lblClear.AutoSize = true;
             this.lblClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.lblClear.ForeColor = System.Drawing.Color.Red;
-            this.lblClear.Location = new System.Drawing.Point(84, 359);
+            this.lblClear.Location = new System.Drawing.Point(280, 327);
             this.lblClear.Name = "lblClear";
             this.lblClear.Size = new System.Drawing.Size(31, 13);
             this.lblClear.TabIndex = 8;
@@ -157,11 +162,23 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(12, 259);
+            this.label4.Location = new System.Drawing.Point(9, 275);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 16);
             this.label4.TabIndex = 9;
             this.label4.Text = "Password:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label2.Location = new System.Drawing.Point(55, 178);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(211, 26);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Login to Your Account";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // LoginForm
             // 
@@ -169,6 +186,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(323, 485);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblClear);
             this.Controls.Add(this.checkBoxPass);
@@ -205,6 +223,7 @@
         private System.Windows.Forms.CheckBox checkBoxPass;
         private System.Windows.Forms.Label lblClear;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
     }
 }
 
