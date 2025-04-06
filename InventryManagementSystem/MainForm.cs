@@ -16,5 +16,10 @@ namespace InventryManagementSystem
         {
             InitializeComponent();
         }
+
+        private void customerButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
