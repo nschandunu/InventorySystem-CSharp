@@ -8,3 +8,5 @@ Z:\Inventory Management System\InventryManagementSystem\InventryManagementSystem
 Z:\Inventory Management System\InventryManagementSystem\InventryManagementSystem\obj\Debug\InventryManagementSystem.csproj.CoreCompileInputs.cache
 Z:\Inventory Management System\InventryManagementSystem\InventryManagementSystem\obj\Debug\InventryManagementSystem.exe
 Z:\Inventory Management System\InventryManagementSystem\InventryManagementSystem\obj\Debug\InventryManagementSystem.pdb
+Z:\Inventory Management System\InventryManagementSystem\InventryManagementSystem\obj\Debug\InventryManagementSystem.CustomerButton.resources
+Z:\Inventory Management System\InventryManagementSystem\InventryManagementSystem\obj\Debug\InventryManagementSystem.MainForm.resources
