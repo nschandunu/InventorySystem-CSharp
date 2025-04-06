@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "Z:\\Inventory Management System\\InventryManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BCA30A92-663D-418B-9CD2-B1E2A3BE5B27}|InventryManagementSystem\\InventryManagementSystem.csproj|z:\\inventory management system\\inventrymanagementsystem\\inventrymanagementsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BCA30A92-663D-418B-9CD2-B1E2A3BE5B27}|InventryManagementSystem\\InventryManagementSystem.csproj|solutionrelative:inventrymanagementsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BCA30A92-663D-418B-9CD2-B1E2A3BE5B27}|InventryManagementSystem\\InventryManagementSystem.csproj|z:\\inventory management system\\inventrymanagementsystem\\inventrymanagementsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCA30A92-663D-418B-9CD2-B1E2A3BE5B27}|InventryManagementSystem\\InventryManagementSystem.csproj|solutionrelative:inventrymanagementsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BCA30A92-663D-418B-9CD2-B1E2A3BE5B27}|InventryManagementSystem\\InventryManagementSystem.csproj|z:\\inventory management system\\inventrymanagementsystem\\inventrymanagementsystem\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BCA30A92-663D-418B-9CD2-B1E2A3BE5B27}|InventryManagementSystem\\InventryManagementSystem.csproj|solutionrelative:inventrymanagementsystem\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCA30A92-663D-418B-9CD2-B1E2A3BE5B27}|InventryManagementSystem\\InventryManagementSystem.csproj|z:\\inventory management system\\inventrymanagementsystem\\inventrymanagementsystem\\loginform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{BCA30A92-663D-418B-9CD2-B1E2A3BE5B27}|InventryManagementSystem\\InventryManagementSystem.csproj|solutionrelative:inventrymanagementsystem\\loginform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+      "AbsoluteMoniker": "D:0:0:{BCA30A92-663D-418B-9CD2-B1E2A3BE5B27}|InventryManagementSystem\\InventryManagementSystem.csproj|z:\\inventory management system\\inventrymanagementsystem\\inventrymanagementsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCA30A92-663D-418B-9CD2-B1E2A3BE5B27}|InventryManagementSystem\\InventryManagementSystem.csproj|solutionrelative:inventrymanagementsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCA30A92-663D-418B-9CD2-B1E2A3BE5B27}|InventryManagementSystem\\InventryManagementSystem.csproj|z:\\inventory management system\\inventrymanagementsystem\\inventrymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BCA30A92-663D-418B-9CD2-B1E2A3BE5B27}|InventryManagementSystem\\InventryManagementSystem.csproj|Z:\\Inventory Management System\\InventryManagementSystem\\inventrymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BCA30A92-663D-418B-9CD2-B1E2A3BE5B27}|InventryManagementSystem\\InventryManagementSystem.csproj|solutionrelative:inventrymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCA30A92-663D-418B-9CD2-B1E2A3BE5B27}|InventryManagementSystem\\InventryManagementSystem.csproj|z:\\inventory management system\\inventrymanagementsystem\\inventrymanagementsystem\\loginform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{BCA30A92-663D-418B-9CD2-B1E2A3BE5B27}|InventryManagementSystem\\InventryManagementSystem.csproj|solutionrelative:inventrymanagementsystem\\loginform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,6 +35,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "Z:\\Inventory Management System\\InventryManagementSystem\\InventryManagementSystem\\LoginForm.cs",
+              "RelativeDocumentMoniker": "InventryManagementSystem\\LoginForm.cs",
+              "ToolTip": "Z:\\Inventory Management System\\InventryManagementSystem\\InventryManagementSystem\\LoginForm.cs",
+              "RelativeToolTip": "InventryManagementSystem\\LoginForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T06:16:20.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "Z:\\Inventory Management System\\InventryManagementSystem\\InventryManagementSystem\\LoginForm.cs",
               "RelativeDocumentMoniker": "InventryManagementSystem\\LoginForm.cs",
@@ -55,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "LoginForm.resx",
               "DocumentMoniker": "Z:\\Inventory Management System\\InventryManagementSystem\\InventryManagementSystem\\LoginForm.resx",
               "RelativeDocumentMoniker": "InventryManagementSystem\\LoginForm.resx",
@@ -73,7 +90,7 @@
               "RelativeDocumentMoniker": "InventryManagementSystem\\Program.cs",
               "ToolTip": "Z:\\Inventory Management System\\InventryManagementSystem\\InventryManagementSystem\\Program.cs",
               "RelativeToolTip": "InventryManagementSystem\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-05T18:05:19.828Z",
               "EditorCaption": ""
