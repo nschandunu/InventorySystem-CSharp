@@ -19,7 +19,8 @@ namespace InventryManagementSystem
 
         private void label4_Click(object sender, EventArgs e)
         {
-
+            txtName.Clear();
+            txtPass.Clear();
         }
 
         private void checkBoxPass_CheckedChanged(object sender, EventArgs e)
