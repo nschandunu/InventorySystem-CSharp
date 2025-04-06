@@ -40,5 +40,18 @@ namespace InventryManagementSystem
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxClose_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Exit Application", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }
