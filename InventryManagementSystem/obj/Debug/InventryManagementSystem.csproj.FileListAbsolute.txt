@@ -10,3 +10,15 @@ Z:\Inventory Management System\InventryManagementSystem\InventryManagementSystem
 Z:\Inventory Management System\InventryManagementSystem\InventryManagementSystem\obj\Debug\InventryManagementSystem.pdb
 Z:\Inventory Management System\InventryManagementSystem\InventryManagementSystem\obj\Debug\InventryManagementSystem.CustomerButton.resources
 Z:\Inventory Management System\InventryManagementSystem\InventryManagementSystem\obj\Debug\InventryManagementSystem.MainForm.resources
+Z:\C# OOP APP\InventorySystem-CSharp\InventryManagementSystem\bin\Debug\InventryManagementSystem.exe.config
+Z:\C# OOP APP\InventorySystem-CSharp\InventryManagementSystem\bin\Debug\InventryManagementSystem.exe
+Z:\C# OOP APP\InventorySystem-CSharp\InventryManagementSystem\bin\Debug\InventryManagementSystem.pdb
+Z:\C# OOP APP\InventorySystem-CSharp\InventryManagementSystem\obj\Debug\InventryManagementSystem.csproj.AssemblyReference.cache
+Z:\C# OOP APP\InventorySystem-CSharp\InventryManagementSystem\obj\Debug\InventryManagementSystem.CustomerButton.resources
+Z:\C# OOP APP\InventorySystem-CSharp\InventryManagementSystem\obj\Debug\InventryManagementSystem.LoginForm.resources
+Z:\C# OOP APP\InventorySystem-CSharp\InventryManagementSystem\obj\Debug\InventryManagementSystem.MainForm.resources
+Z:\C# OOP APP\InventorySystem-CSharp\InventryManagementSystem\obj\Debug\InventryManagementSystem.Properties.Resources.resources
+Z:\C# OOP APP\InventorySystem-CSharp\InventryManagementSystem\obj\Debug\InventryManagementSystem.csproj.GenerateResource.cache
+Z:\C# OOP APP\InventorySystem-CSharp\InventryManagementSystem\obj\Debug\InventryManagementSystem.csproj.CoreCompileInputs.cache
+Z:\C# OOP APP\InventorySystem-CSharp\InventryManagementSystem\obj\Debug\InventryManagementSystem.exe
+Z:\C# OOP APP\InventorySystem-CSharp\InventryManagementSystem\obj\Debug\InventryManagementSystem.pdb
