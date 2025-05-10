@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|z:\\inventory management system\\inventorysystem-csharp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|z:\\inventory management system\\inventorysystem-csharp\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,18 +26,6 @@
               "RelativeToolTip": "MainForm.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T17:04:57.722Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "Z:\\Inventory Management System\\InventorySystem-CSharp\\LoginForm.cs",
-              "RelativeDocumentMoniker": "LoginForm.cs",
-              "ToolTip": "Z:\\Inventory Management System\\InventorySystem-CSharp\\LoginForm.cs [Design]",
-              "RelativeToolTip": "LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T16:20:51.594Z",
               "EditorCaption": " [Design]"
             }
           ]

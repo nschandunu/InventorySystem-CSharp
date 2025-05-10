@@ -19,3 +19,4 @@ Z:\Inventory Management System\InventorySystem-CSharp\obj\Debug\SmartInventoryTr
 Z:\Inventory Management System\InventorySystem-CSharp\obj\Debug\SmartInventoryTracker.exe
 Z:\Inventory Management System\InventorySystem-CSharp\obj\Debug\SmartInventoryTracker.pdb
 Z:\Inventory Management System\InventorySystem-CSharp\obj\Debug\SmartInventoryTracker.MainForm.resources
+Z:\Inventory Management System\InventorySystem-CSharp\obj\Debug\SmartInventoryTracker.CustomerButton.resources
