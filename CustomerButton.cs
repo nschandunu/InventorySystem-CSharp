@@ -33,8 +33,13 @@ namespace SmartInventoryTracker
 
         private void CustomerButton_Load(object sender, EventArgs e)
         {
-            this.Image = NormalImage;
         }
+
+        private void CustomerButton_MouseHover(object sender, EventArgs e)
+        {
+            this.Image = HoverImage;
+        }
+
         private void CustomerButton_MouseLeave(object sender, EventArgs e)
         {
             this.Image = NormalImage;

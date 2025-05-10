@@ -28,14 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // CustomerButton
             // 
-            this.Name = "CustomerButton";
             this.Size = new System.Drawing.Size(274, 274);
+            this.MouseLeave += new System.EventHandler(this.CustomerButton_MouseLeave);
+            this.MouseHover += new System.EventHandler(this.CustomerButton_MouseHover);
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
-            components = new System.ComponentModel.Container();
 
         }
 

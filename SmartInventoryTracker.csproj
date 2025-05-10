@@ -108,5 +108,41 @@
   <ItemGroup>
     <None Include="icons\close_icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\files.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\files_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\box2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\cart2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Categorize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\categorize2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\customer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\users2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
