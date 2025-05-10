@@ -88,7 +88,7 @@
     <None Include="icons\logo2_120px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="icons\Close.png" />
+    <None Include="icons\close_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
