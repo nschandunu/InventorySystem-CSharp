@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "Z:\\Inventory Management System\\InventorySystem-CSharp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|z:\\inventory management system\\inventorysystem-csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|z:\\inventory management system\\inventorysystem-csharp\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|z:\\inventory management system\\inventorysystem-csharp\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|z:\\inventory management system\\inventorysystem-csharp\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|solutionrelative:loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|z:\\inventory management system\\inventorysystem-csharp\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|solutionrelative:properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,32 +19,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "Z:\\Inventory Management System\\InventorySystem-CSharp\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "Z:\\Inventory Management System\\InventorySystem-CSharp\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T16:30:21.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "Z:\\Inventory Management System\\InventorySystem-CSharp\\LoginForm.cs",
-              "RelativeDocumentMoniker": "LoginForm.cs",
-              "ToolTip": "Z:\\Inventory Management System\\InventorySystem-CSharp\\LoginForm.cs",
-              "RelativeToolTip": "LoginForm.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAwCcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T16:24:15.027Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "Z:\\Inventory Management System\\InventorySystem-CSharp\\LoginForm.cs",
               "RelativeDocumentMoniker": "LoginForm.cs",
@@ -69,31 +27,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T16:20:51.594Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "Z:\\Inventory Management System\\InventorySystem-CSharp\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "Properties\\Resources.resx",
-              "ToolTip": "Z:\\Inventory Management System\\InventorySystem-CSharp\\Properties\\Resources.resx",
-              "RelativeToolTip": "Properties\\Resources.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-05-10T16:19:51.483Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginForm.Designer.cs",
-              "DocumentMoniker": "Z:\\Inventory Management System\\InventorySystem-CSharp\\LoginForm.Designer.cs",
-              "RelativeDocumentMoniker": "LoginForm.Designer.cs",
-              "ToolTip": "Z:\\Inventory Management System\\InventorySystem-CSharp\\LoginForm.Designer.cs",
-              "RelativeToolTip": "LoginForm.Designer.cs",
-              "ViewState": "AgIAAKEAAAAAAAAAAAAAwOMAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T16:17:24.389Z",
-              "EditorCaption": ""
             }
           ]
         }
