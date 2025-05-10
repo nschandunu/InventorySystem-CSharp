@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|Z:\\Inventory Management System\\SmartInventoryTracker\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|solutionrelative:loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|Z:\\Inventory Management System\\SmartInventoryTracker\\loginform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|solutionrelative:loginform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+      "AbsoluteMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|z:\\inventory management system\\smartinventorytracker\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,31 +18,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginForm.resx",
-              "DocumentMoniker": "Z:\\Inventory Management System\\SmartInventoryTracker\\LoginForm.resx",
-              "RelativeDocumentMoniker": "LoginForm.resx",
-              "ToolTip": "Z:\\Inventory Management System\\SmartInventoryTracker\\LoginForm.resx",
-              "RelativeToolTip": "LoginForm.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-05-10T04:06:11.329Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LoginForm.Designer.cs",
-              "DocumentMoniker": "Z:\\Inventory Management System\\SmartInventoryTracker\\LoginForm.Designer.cs",
-              "RelativeDocumentMoniker": "LoginForm.Designer.cs",
-              "ToolTip": "Z:\\Inventory Management System\\SmartInventoryTracker\\LoginForm.Designer.cs",
-              "RelativeToolTip": "LoginForm.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "Z:\\Inventory Management System\\SmartInventoryTracker\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "Z:\\Inventory Management System\\SmartInventoryTracker\\LoginForm.cs",
+              "RelativeToolTip": "LoginForm.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAvwCoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T14:18:08.557Z",
+              "WhenOpened": "2025-05-10T15:07:47.563Z",
               "EditorCaption": ""
             },
             {
