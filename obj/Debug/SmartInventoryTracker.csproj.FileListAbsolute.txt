@@ -20,3 +20,15 @@ Z:\Inventory Management System\InventorySystem-CSharp\obj\Debug\SmartInventoryTr
 Z:\Inventory Management System\InventorySystem-CSharp\obj\Debug\SmartInventoryTracker.pdb
 Z:\Inventory Management System\InventorySystem-CSharp\obj\Debug\SmartInventoryTracker.MainForm.resources
 Z:\Inventory Management System\InventorySystem-CSharp\obj\Debug\SmartInventoryTracker.CustomerButton.resources
+C:\InventorySystem-CSharp\bin\Debug\SmartInventoryTracker.exe.config
+C:\InventorySystem-CSharp\bin\Debug\SmartInventoryTracker.exe
+C:\InventorySystem-CSharp\bin\Debug\SmartInventoryTracker.pdb
+C:\InventorySystem-CSharp\obj\Debug\SmartInventoryTracker.csproj.AssemblyReference.cache
+C:\InventorySystem-CSharp\obj\Debug\SmartInventoryTracker.CustomerButton.resources
+C:\InventorySystem-CSharp\obj\Debug\SmartInventoryTracker.LoginForm.resources
+C:\InventorySystem-CSharp\obj\Debug\SmartInventoryTracker.MainForm.resources
+C:\InventorySystem-CSharp\obj\Debug\SmartInventoryTracker.Properties.Resources.resources
+C:\InventorySystem-CSharp\obj\Debug\SmartInventoryTracker.csproj.GenerateResource.cache
+C:\InventorySystem-CSharp\obj\Debug\SmartInventoryTracker.csproj.CoreCompileInputs.cache
+C:\InventorySystem-CSharp\obj\Debug\SmartInventoryTracker.exe
+C:\InventorySystem-CSharp\obj\Debug\SmartInventoryTracker.pdb

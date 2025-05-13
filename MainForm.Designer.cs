@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.customerButton5 = new SmartInventoryTracker.CustomerButton();
             this.customerButton4 = new SmartInventoryTracker.CustomerButton();
             this.customerButton3 = new SmartInventoryTracker.CustomerButton();
@@ -70,8 +70,58 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1787, 142);
+            this.panel1.Size = new System.Drawing.Size(1543, 142);
             this.panel1.TabIndex = 0;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Franklin Gothic Medium", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(1550, 90);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 15);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "ORDERS";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Franklin Gothic Medium", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(1393, 88);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 15);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "USERS";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Franklin Gothic Medium", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(989, 90);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(75, 15);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "CUSTOMERS";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Franklin Gothic Medium", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(1186, 88);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(77, 15);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "CATEGORIES";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(806, 88);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 15);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "PRODUCTS";
             // 
             // label3
             // 
@@ -80,7 +130,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(130, 63);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(585, 43);
+            this.label3.Size = new System.Drawing.Size(295, 24);
             this.label3.TabIndex = 8;
             this.label3.Text = "INVENTORY MANAGEMENT SYSTEM";
             // 
@@ -91,7 +141,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(29, -13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 156);
+            this.label1.Size = new System.Drawing.Size(65, 80);
             this.label1.TabIndex = 9;
             this.label1.Text = "X";
             // 
@@ -102,7 +152,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 943);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1787, 27);
+            this.panel2.Size = new System.Drawing.Size(1543, 27);
             this.panel2.TabIndex = 1;
             // 
             // panelMain
@@ -111,58 +161,8 @@
             this.panelMain.Location = new System.Drawing.Point(0, 142);
             this.panelMain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1787, 801);
+            this.panelMain.Size = new System.Drawing.Size(1543, 801);
             this.panelMain.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(806, 88);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 26);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "PRODUCTS";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Franklin Gothic Medium", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1186, 88);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 26);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "CATEGORIES";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Franklin Gothic Medium", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(989, 90);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(135, 26);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "CUSTOMERS";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Franklin Gothic Medium", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1393, 88);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 26);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "USERS";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Franklin Gothic Medium", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(1550, 90);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 26);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "ORDERS";
             // 
             // customerButton5
             // 
@@ -227,9 +227,9 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1787, 970);
+            this.ClientSize = new System.Drawing.Size(1543, 970);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

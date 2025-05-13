@@ -1,26 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "Z:\\Inventory Management System\\InventorySystem-CSharp\\",
+  "WorkspaceRootPath": "C:\\InventorySystem-CSharp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|z:\\inventory management system\\inventorysystem-csharp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|c:\\inventorysystem-csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|z:\\inventory management system\\inventorysystem-csharp\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|solutionrelative:mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|c:\\inventorysystem-csharp\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|z:\\inventory management system\\inventorysystem-csharp\\customerbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|c:\\inventorysystem-csharp\\customerbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|solutionrelative:customerbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|z:\\inventory management system\\inventorysystem-csharp\\customerbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|solutionrelative:customerbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|z:\\inventory management system\\inventorysystem-csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|c:\\inventorysystem-csharp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}|SmartInventoryTracker.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,67 +26,53 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CustomerButton.cs",
-              "DocumentMoniker": "Z:\\Inventory Management System\\InventorySystem-CSharp\\CustomerButton.cs",
-              "RelativeDocumentMoniker": "CustomerButton.cs",
-              "ToolTip": "Z:\\Inventory Management System\\InventorySystem-CSharp\\CustomerButton.cs",
-              "RelativeToolTip": "CustomerButton.cs",
-              "ViewState": "AgIAABsAAAAyMzMzM5M7wCwAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\InventorySystem-CSharp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\InventorySystem-CSharp\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T17:47:41.247Z",
+              "WhenOpened": "2025-05-13T07:14:50.026Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "CustomerButton.cs [Design]",
-              "DocumentMoniker": "Z:\\Inventory Management System\\InventorySystem-CSharp\\CustomerButton.cs",
+              "DocumentMoniker": "C:\\InventorySystem-CSharp\\CustomerButton.cs",
               "RelativeDocumentMoniker": "CustomerButton.cs",
-              "ToolTip": "Z:\\Inventory Management System\\InventorySystem-CSharp\\CustomerButton.cs [Design]",
+              "ToolTip": "C:\\InventorySystem-CSharp\\CustomerButton.cs [Design]",
               "RelativeToolTip": "CustomerButton.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T17:47:22.898Z",
+              "WhenOpened": "2025-05-13T07:14:45.046Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "Z:\\Inventory Management System\\InventorySystem-CSharp\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "Z:\\Inventory Management System\\InventorySystem-CSharp\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T17:41:47.019Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainForm.Designer.cs",
-              "DocumentMoniker": "Z:\\Inventory Management System\\InventorySystem-CSharp\\MainForm.Designer.cs",
-              "RelativeDocumentMoniker": "MainForm.Designer.cs",
-              "ToolTip": "Z:\\Inventory Management System\\InventorySystem-CSharp\\MainForm.Designer.cs*",
-              "RelativeToolTip": "MainForm.Designer.cs*",
-              "ViewState": "AgIAAGkAAAAAAJqZmZmpv3QAAAAAAAAAAAAAAA==",
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\InventorySystem-CSharp\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\InventorySystem-CSharp\\LoginForm.cs [Design]",
+              "RelativeToolTip": "LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T17:36:12.923Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T07:14:39.036Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "Z:\\Inventory Management System\\InventorySystem-CSharp\\MainForm.cs",
+              "DocumentMoniker": "C:\\InventorySystem-CSharp\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "Z:\\Inventory Management System\\InventorySystem-CSharp\\MainForm.cs [Design]*",
-              "RelativeToolTip": "MainForm.cs [Design]*",
+              "ToolTip": "C:\\InventorySystem-CSharp\\MainForm.cs [Design]",
+              "RelativeToolTip": "MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T17:04:57.722Z",
               "EditorCaption": " [Design]"
