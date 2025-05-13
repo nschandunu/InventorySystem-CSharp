@@ -50,9 +50,9 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 922);
+            this.panel1.Location = new System.Drawing.Point(0, 581);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1797, 80);
+            this.panel1.Size = new System.Drawing.Size(1179, 80);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -62,7 +62,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(14, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(274, 42);
+            this.label1.Size = new System.Drawing.Size(144, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Manage Users";
             // 
@@ -73,7 +73,7 @@
             this.dgvUser.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.875F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -95,7 +95,7 @@
             this.dgvUser.Name = "dgvUser";
             this.dgvUser.RowHeadersWidth = 82;
             this.dgvUser.RowTemplate.Height = 33;
-            this.dgvUser.Size = new System.Drawing.Size(1797, 922);
+            this.dgvUser.Size = new System.Drawing.Size(1179, 581);
             this.dgvUser.TabIndex = 1;
             this.dgvUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellContentClick);
             // 
@@ -105,7 +105,7 @@
             this.Column7.HeaderText = "No";
             this.Column7.MinimumWidth = 10;
             this.Column7.Name = "Column7";
-            this.Column7.Width = 107;
+            this.Column7.Width = 52;
             // 
             // Column1
             // 
@@ -113,7 +113,7 @@
             this.Column1.HeaderText = "User Name";
             this.Column1.MinimumWidth = 10;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 233;
+            this.Column1.Width = 103;
             // 
             // Column2
             // 
@@ -128,7 +128,7 @@
             this.Column3.HeaderText = "Password";
             this.Column3.MinimumWidth = 10;
             this.Column3.Name = "Column3";
-            this.Column3.Width = 211;
+            this.Column3.Width = 101;
             // 
             // Column4
             // 
@@ -136,7 +136,7 @@
             this.Column4.HeaderText = "Phone";
             this.Column4.MinimumWidth = 10;
             this.Column4.Name = "Column4";
-            this.Column4.Width = 162;
+            this.Column4.Width = 78;
             // 
             // Column5
             // 
@@ -163,7 +163,6 @@
             this.dataGridViewImageColumn1.Image = global::SmartInventoryTracker.Properties.Resources.Edit;
             this.dataGridViewImageColumn1.MinimumWidth = 10;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Width = 200;
             // 
             // dataGridViewImageColumn2
             // 
@@ -172,16 +171,15 @@
             this.dataGridViewImageColumn2.Image = global::SmartInventoryTracker.Properties.Resources.Delete;
             this.dataGridViewImageColumn2.MinimumWidth = 10;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.Width = 200;
             // 
             // UserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 33F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1797, 1002);
+            this.ClientSize = new System.Drawing.Size(1179, 661);
             this.Controls.Add(this.dgvUser);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Calibri Bold", 11.875F);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.875F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UserForm";
             this.Text = "UserForm";
