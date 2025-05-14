@@ -83,6 +83,7 @@
             this.btnUpdate.TabIndex = 25;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnClear
             // 
@@ -183,6 +184,7 @@
             this.lblCId.TabIndex = 30;
             this.lblCId.Text = "customer Id";
             this.lblCId.Visible = false;
+            this.lblCId.Click += new System.EventHandler(this.lblCId_Click);
             // 
             // CustomerModuleForm
             // 
@@ -224,6 +226,6 @@
         private System.Windows.Forms.PictureBox pictureBoxClose;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblCId;
+        public System.Windows.Forms.Label lblCId;
     }
 }
