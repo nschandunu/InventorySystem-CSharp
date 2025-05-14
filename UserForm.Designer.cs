@@ -42,8 +42,8 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
@@ -104,8 +104,8 @@
             this.Column2,
             this.Column3,
             this.Column4,
-            this.Column5,
-            this.Column6});
+            this.Edit,
+            this.Delete});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.875F);
@@ -192,25 +192,25 @@
             this.Column4.Name = "Column4";
             this.Column4.Width = 78;
             // 
-            // Column5
+            // Edit
             // 
-            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column5.HeaderText = "";
-            this.Column5.Image = global::SmartInventoryTracker.Properties.Resources.Edit;
-            this.Column5.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.Column5.MinimumWidth = 10;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 10;
+            this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Edit.HeaderText = "";
+            this.Edit.Image = global::SmartInventoryTracker.Properties.Resources.Edit;
+            this.Edit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Edit.MinimumWidth = 10;
+            this.Edit.Name = "Edit";
+            this.Edit.Width = 10;
             // 
-            // Column6
+            // Delete
             // 
-            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column6.HeaderText = "";
-            this.Column6.Image = global::SmartInventoryTracker.Properties.Resources.Delete;
-            this.Column6.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.Column6.MinimumWidth = 10;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 10;
+            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Delete.HeaderText = "";
+            this.Delete.Image = global::SmartInventoryTracker.Properties.Resources.Delete;
+            this.Delete.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Delete.MinimumWidth = 10;
+            this.Delete.Name = "Delete";
+            this.Delete.Width = 10;
             // 
             // UserForm
             // 
@@ -245,7 +245,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewImageColumn Column5;
-        private System.Windows.Forms.DataGridViewImageColumn Column6;
+        private System.Windows.Forms.DataGridViewImageColumn Edit;
+        private System.Windows.Forms.DataGridViewImageColumn Delete;
     }
 }
