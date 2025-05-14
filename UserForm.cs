@@ -48,5 +48,13 @@ namespace SmartInventoryTracker
 
         }
 
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            UserModuleForm userModule = new UserModuleForm();
+            userModule.btnSave.Enabled = true;
+            userModule.btnUpdate.Enabled = false;
+            userModule.ShowDialog();
+            LoadUser();
+        }
     }
 }

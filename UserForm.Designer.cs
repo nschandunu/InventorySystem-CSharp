@@ -36,7 +36,7 @@
             this.dgvUser = new System.Windows.Forms.DataGridView();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.customerButton2 = new SmartInventoryTracker.CustomerButton();
+            this.btnAdd = new SmartInventoryTracker.CustomerButton();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,7 +46,7 @@
             this.Column6 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -54,7 +54,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.customerButton2);
+            this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 581);
             this.panel1.Name = "panel1";
@@ -140,17 +140,18 @@
             this.dataGridViewImageColumn2.MinimumWidth = 10;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             // 
-            // customerButton2
+            // btnAdd
             // 
-            this.customerButton2.Image = global::SmartInventoryTracker.Properties.Resources.plus3;
-            this.customerButton2.ImageHover = global::SmartInventoryTracker.Properties.Resources.plus4;
-            this.customerButton2.ImageNormal = global::SmartInventoryTracker.Properties.Resources.plus3;
-            this.customerButton2.Location = new System.Drawing.Point(1108, 13);
-            this.customerButton2.Name = "customerButton2";
-            this.customerButton2.Size = new System.Drawing.Size(34, 30);
-            this.customerButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customerButton2.TabIndex = 19;
-            this.customerButton2.TabStop = false;
+            this.btnAdd.Image = global::SmartInventoryTracker.Properties.Resources.plus3;
+            this.btnAdd.ImageHover = global::SmartInventoryTracker.Properties.Resources.plus4;
+            this.btnAdd.ImageNormal = global::SmartInventoryTracker.Properties.Resources.plus3;
+            this.btnAdd.Location = new System.Drawing.Point(1108, 13);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(34, 30);
+            this.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnAdd.TabIndex = 19;
+            this.btnAdd.TabStop = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // Column7
             // 
@@ -225,7 +226,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -238,7 +239,7 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.Label label5;
-        private CustomerButton customerButton2;
+        private CustomerButton btnAdd;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
