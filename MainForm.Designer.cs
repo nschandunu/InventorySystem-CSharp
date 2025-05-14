@@ -34,21 +34,21 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.customerButton5 = new SmartInventoryTracker.CustomerButton();
-            this.customerButton4 = new SmartInventoryTracker.CustomerButton();
-            this.customerButton3 = new SmartInventoryTracker.CustomerButton();
-            this.customerButton2 = new SmartInventoryTracker.CustomerButton();
+            this.btnOrder = new SmartInventoryTracker.CustomerButton();
+            this.btnUser = new SmartInventoryTracker.CustomerButton();
+            this.btnCategory = new SmartInventoryTracker.CustomerButton();
+            this.btnCustomer = new SmartInventoryTracker.CustomerButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.customerButton1 = new SmartInventoryTracker.CustomerButton();
+            this.btnProduct = new SmartInventoryTracker.CustomerButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnOrder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCategory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnProduct)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -59,12 +59,12 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.customerButton5);
-            this.panel1.Controls.Add(this.customerButton4);
-            this.panel1.Controls.Add(this.customerButton3);
-            this.panel1.Controls.Add(this.customerButton2);
+            this.panel1.Controls.Add(this.btnOrder);
+            this.panel1.Controls.Add(this.btnUser);
+            this.panel1.Controls.Add(this.btnCategory);
+            this.panel1.Controls.Add(this.btnCustomer);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.customerButton1);
+            this.panel1.Controls.Add(this.btnProduct);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -123,53 +123,54 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "PRODUCTS";
             // 
-            // customerButton5
+            // btnOrder
             // 
-            this.customerButton5.Image = global::SmartInventoryTracker.Properties.Resources.cart;
-            this.customerButton5.ImageHover = global::SmartInventoryTracker.Properties.Resources.cart2;
-            this.customerButton5.ImageNormal = global::SmartInventoryTracker.Properties.Resources.cart;
-            this.customerButton5.Location = new System.Drawing.Point(1037, 32);
-            this.customerButton5.Name = "customerButton5";
-            this.customerButton5.Size = new System.Drawing.Size(62, 54);
-            this.customerButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customerButton5.TabIndex = 15;
-            this.customerButton5.TabStop = false;
+            this.btnOrder.Image = global::SmartInventoryTracker.Properties.Resources.cart;
+            this.btnOrder.ImageHover = global::SmartInventoryTracker.Properties.Resources.cart2;
+            this.btnOrder.ImageNormal = global::SmartInventoryTracker.Properties.Resources.cart;
+            this.btnOrder.Location = new System.Drawing.Point(1037, 32);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Size = new System.Drawing.Size(62, 54);
+            this.btnOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnOrder.TabIndex = 15;
+            this.btnOrder.TabStop = false;
             // 
-            // customerButton4
+            // btnUser
             // 
-            this.customerButton4.Image = global::SmartInventoryTracker.Properties.Resources.users;
-            this.customerButton4.ImageHover = global::SmartInventoryTracker.Properties.Resources.users2;
-            this.customerButton4.ImageNormal = global::SmartInventoryTracker.Properties.Resources.users;
-            this.customerButton4.Location = new System.Drawing.Point(907, 32);
-            this.customerButton4.Name = "customerButton4";
-            this.customerButton4.Size = new System.Drawing.Size(62, 54);
-            this.customerButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customerButton4.TabIndex = 14;
-            this.customerButton4.TabStop = false;
+            this.btnUser.Image = global::SmartInventoryTracker.Properties.Resources.users;
+            this.btnUser.ImageHover = global::SmartInventoryTracker.Properties.Resources.users2;
+            this.btnUser.ImageNormal = global::SmartInventoryTracker.Properties.Resources.users;
+            this.btnUser.Location = new System.Drawing.Point(907, 32);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Size = new System.Drawing.Size(62, 54);
+            this.btnUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnUser.TabIndex = 14;
+            this.btnUser.TabStop = false;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
-            // customerButton3
+            // btnCategory
             // 
-            this.customerButton3.Image = global::SmartInventoryTracker.Properties.Resources.Categorize;
-            this.customerButton3.ImageHover = global::SmartInventoryTracker.Properties.Resources.categorize2;
-            this.customerButton3.ImageNormal = global::SmartInventoryTracker.Properties.Resources.Categorize;
-            this.customerButton3.Location = new System.Drawing.Point(764, 32);
-            this.customerButton3.Name = "customerButton3";
-            this.customerButton3.Size = new System.Drawing.Size(62, 54);
-            this.customerButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customerButton3.TabIndex = 13;
-            this.customerButton3.TabStop = false;
+            this.btnCategory.Image = global::SmartInventoryTracker.Properties.Resources.Categorize;
+            this.btnCategory.ImageHover = global::SmartInventoryTracker.Properties.Resources.categorize2;
+            this.btnCategory.ImageNormal = global::SmartInventoryTracker.Properties.Resources.Categorize;
+            this.btnCategory.Location = new System.Drawing.Point(764, 32);
+            this.btnCategory.Name = "btnCategory";
+            this.btnCategory.Size = new System.Drawing.Size(62, 54);
+            this.btnCategory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCategory.TabIndex = 13;
+            this.btnCategory.TabStop = false;
             // 
-            // customerButton2
+            // btnCustomer
             // 
-            this.customerButton2.Image = global::SmartInventoryTracker.Properties.Resources.customer;
-            this.customerButton2.ImageHover = global::SmartInventoryTracker.Properties.Resources.customer2;
-            this.customerButton2.ImageNormal = global::SmartInventoryTracker.Properties.Resources.customer;
-            this.customerButton2.Location = new System.Drawing.Point(606, 32);
-            this.customerButton2.Name = "customerButton2";
-            this.customerButton2.Size = new System.Drawing.Size(62, 54);
-            this.customerButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customerButton2.TabIndex = 12;
-            this.customerButton2.TabStop = false;
+            this.btnCustomer.Image = global::SmartInventoryTracker.Properties.Resources.customer;
+            this.btnCustomer.ImageHover = global::SmartInventoryTracker.Properties.Resources.customer2;
+            this.btnCustomer.ImageNormal = global::SmartInventoryTracker.Properties.Resources.customer;
+            this.btnCustomer.Location = new System.Drawing.Point(606, 32);
+            this.btnCustomer.Name = "btnCustomer";
+            this.btnCustomer.Size = new System.Drawing.Size(62, 54);
+            this.btnCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCustomer.TabIndex = 12;
+            this.btnCustomer.TabStop = false;
             // 
             // label3
             // 
@@ -182,18 +183,18 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "INVENTORY MANAGEMENT SYSTEM";
             // 
-            // customerButton1
+            // btnProduct
             // 
-            this.customerButton1.Image = global::SmartInventoryTracker.Properties.Resources.Box;
-            this.customerButton1.ImageHover = global::SmartInventoryTracker.Properties.Resources.box2;
-            this.customerButton1.ImageNormal = global::SmartInventoryTracker.Properties.Resources.Box;
-            this.customerButton1.Location = new System.Drawing.Point(453, 32);
-            this.customerButton1.Name = "customerButton1";
-            this.customerButton1.Size = new System.Drawing.Size(62, 54);
-            this.customerButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customerButton1.TabIndex = 11;
-            this.customerButton1.TabStop = false;
-            this.customerButton1.Click += new System.EventHandler(this.customerButton1_Click);
+            this.btnProduct.Image = global::SmartInventoryTracker.Properties.Resources.Box;
+            this.btnProduct.ImageHover = global::SmartInventoryTracker.Properties.Resources.box2;
+            this.btnProduct.ImageNormal = global::SmartInventoryTracker.Properties.Resources.Box;
+            this.btnProduct.Location = new System.Drawing.Point(453, 32);
+            this.btnProduct.Name = "btnProduct";
+            this.btnProduct.Size = new System.Drawing.Size(62, 54);
+            this.btnProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnProduct.TabIndex = 11;
+            this.btnProduct.TabStop = false;
+            this.btnProduct.Click += new System.EventHandler(this.customerButton1_Click);
             // 
             // label1
             // 
@@ -239,11 +240,11 @@
             this.Text = "MainForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnOrder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCategory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnProduct)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -260,10 +261,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private CustomerButton customerButton5;
-        private CustomerButton customerButton4;
-        private CustomerButton customerButton3;
-        private CustomerButton customerButton2;
-        private CustomerButton customerButton1;
+        private CustomerButton btnOrder;
+        private CustomerButton btnUser;
+        private CustomerButton btnCategory;
+        private CustomerButton btnCustomer;
+        private CustomerButton btnProduct;
     }
 }

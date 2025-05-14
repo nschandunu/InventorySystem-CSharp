@@ -22,7 +22,7 @@ namespace SmartInventoryTracker
                 SetProcessDPIAware();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UserModuleForm());
+            Application.Run(new MainForm());
         }
     }
 }
