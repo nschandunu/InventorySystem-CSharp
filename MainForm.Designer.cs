@@ -34,15 +34,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panelMain = new System.Windows.Forms.Panel();
             this.btnOrder = new SmartInventoryTracker.CustomerButton();
             this.btnUser = new SmartInventoryTracker.CustomerButton();
             this.btnCategory = new SmartInventoryTracker.CustomerButton();
             this.btnCustomer = new SmartInventoryTracker.CustomerButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnProduct = new SmartInventoryTracker.CustomerButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUser)).BeginInit();
@@ -123,47 +123,6 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "PRODUCTS";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(107, 69);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(295, 24);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "INVENTORY MANAGEMENT SYSTEM";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Impact", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(26, -6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 117);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "X";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 595);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1163, 27);
-            this.panel2.TabIndex = 1;
-            // 
-            // panelMain
-            // 
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(0, 109);
-            this.panelMain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1163, 486);
-            this.panelMain.TabIndex = 2;
-            // 
             // btnOrder
             // 
             this.btnOrder.Image = global::SmartInventoryTracker.Properties.Resources.cart;
@@ -212,6 +171,18 @@
             this.btnCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCustomer.TabIndex = 12;
             this.btnCustomer.TabStop = false;
+            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(107, 69);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(295, 24);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "INVENTORY MANAGEMENT SYSTEM";
             // 
             // btnProduct
             // 
@@ -225,6 +196,36 @@
             this.btnProduct.TabIndex = 11;
             this.btnProduct.TabStop = false;
             this.btnProduct.Click += new System.EventHandler(this.customerButton1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Impact", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(26, -6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 117);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "X";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 595);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1163, 27);
+            this.panel2.TabIndex = 1;
+            // 
+            // panelMain
+            // 
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(0, 109);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1163, 486);
+            this.panelMain.TabIndex = 2;
             // 
             // MainForm
             // 
