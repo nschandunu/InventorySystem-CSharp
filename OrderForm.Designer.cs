@@ -31,12 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvUser = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnAdd = new SmartInventoryTracker.CustomerButton();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,6 +41,12 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnAdd = new SmartInventoryTracker.CustomerButton();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
@@ -94,67 +94,6 @@
             this.dgvUser.RowTemplate.Height = 33;
             this.dgvUser.Size = new System.Drawing.Size(1179, 608);
             this.dgvUser.TabIndex = 3;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnAdd);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 608);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1179, 53);
-            this.panel1.TabIndex = 2;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Franklin Gothic Medium", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1091, 34);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 15);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "ADD";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(35, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Manage Order";
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Image = global::SmartInventoryTracker.Properties.Resources.plus3;
-            this.btnAdd.ImageHover = global::SmartInventoryTracker.Properties.Resources.plus4;
-            this.btnAdd.ImageNormal = global::SmartInventoryTracker.Properties.Resources.plus3;
-            this.btnAdd.Location = new System.Drawing.Point(1089, 5);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(34, 30);
-            this.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnAdd.TabIndex = 19;
-            this.btnAdd.TabStop = false;
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::SmartInventoryTracker.Properties.Resources.Edit;
-            this.dataGridViewImageColumn1.MinimumWidth = 10;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = global::SmartInventoryTracker.Properties.Resources.Delete;
-            this.dataGridViewImageColumn2.MinimumWidth = 10;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             // 
             // Column7
             // 
@@ -234,6 +173,68 @@
             this.Delete.MinimumWidth = 10;
             this.Delete.Name = "Delete";
             this.Delete.Width = 10;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnAdd);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 608);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1179, 53);
+            this.panel1.TabIndex = 2;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Franklin Gothic Medium", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(1091, 34);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(31, 15);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "ADD";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(35, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(145, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Manage Order";
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Image = global::SmartInventoryTracker.Properties.Resources.plus3;
+            this.btnAdd.ImageHover = global::SmartInventoryTracker.Properties.Resources.plus4;
+            this.btnAdd.ImageNormal = global::SmartInventoryTracker.Properties.Resources.plus3;
+            this.btnAdd.Location = new System.Drawing.Point(1089, 5);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(34, 30);
+            this.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnAdd.TabIndex = 19;
+            this.btnAdd.TabStop = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::SmartInventoryTracker.Properties.Resources.Edit;
+            this.dataGridViewImageColumn1.MinimumWidth = 10;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = global::SmartInventoryTracker.Properties.Resources.Delete;
+            this.dataGridViewImageColumn2.MinimumWidth = 10;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             // 
             // OrderForm
             // 
