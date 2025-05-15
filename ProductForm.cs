@@ -16,5 +16,14 @@ namespace SmartInventoryTracker
         {
             InitializeComponent();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            ProductModuleForm formModule = new ProductModuleForm();
+            formModule.btnSave.Enabled = true;
+            formModule.btnUpdate.Enabled = false;
+            formModule.ShowDialog();
+            
+        }
     }
 }
