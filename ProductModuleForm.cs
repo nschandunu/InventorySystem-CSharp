@@ -24,13 +24,13 @@ namespace SmartInventoryTracker
 
         public void LoadCategory()
         {
-            comboQty.Items.Clear();
+            comboCat.Items.Clear();
             cm = new SqlCommand("SELECT catname FROM tbCategory", con);
             con.Open();
             dr = cm.ExecuteReader();
             while (dr.Read())
             {
-                comboQty.Items.Add(dr[0].ToString());
+                comboCat.Items.Add(dr[0].ToString());
             }
             dr.Close();
             con.Close();
@@ -43,7 +43,77 @@ namespace SmartInventoryTracker
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            try
+            {
 
+                if (MessageBox.Show("Are you sure you want to save this product?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+
+                    cm = new SqlCommand("INSERT INTO tbProduct(pname,pqty,pprice,pdescription,pcategory)VALUES(@pname, @pqty, @pprice, @pdescription, @pcategory)", con);
+                    cm.Parameters.AddWithValue("@pname", txtPName.Text);
+                    cm.Parameters.AddWithValue("@pqty", Convert.ToInt16(txtPQty.Text));
+                    cm.Parameters.AddWithValue("@pprice", Convert.ToInt16(txtPPrice.Text));
+                    cm.Parameters.AddWithValue("@pdescription", txtPDes.Text);
+                    cm.Parameters.AddWithValue("@pcategory", comboCat.Text);
+
+                    con.Open();
+                    cm.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Product has been successfully saved.");
+                    Clear();
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+        public void Clear()
+        {
+            txtPName.Clear();
+            txtPQty.Clear();
+            txtPPrice.Clear();
+            txtPDes.Clear();
+            comboCat.Text = "";
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            Clear();
+            btnSave.Enabled = true;
+            btnUpdate.Enabled = false;
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                if (MessageBox.Show("Are you sure you want to update this product?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+
+                    //cm = new SqlCommand("UPDATE tbProduct SET pname = @pname, pqty=@pqty, pprice=@pprice, pdescription=@pdescription, pcategory=@pcategory WHERE pid LIKE '" + lblPid.Text + "' ", con);
+                    cm.Parameters.AddWithValue("@pname", txtPName.Text);
+                    cm.Parameters.AddWithValue("@pqty", Convert.ToInt16(txtPQty.Text));
+                    cm.Parameters.AddWithValue("@pprice", Convert.ToInt16(txtPPrice.Text));
+                    cm.Parameters.AddWithValue("@pdescription", txtPDes.Text);
+                    cm.Parameters.AddWithValue("@pcategory", comboCat.Text);
+                    con.Open();
+                    cm.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Product has been successfully updated!");
+                    this.Dispose();
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

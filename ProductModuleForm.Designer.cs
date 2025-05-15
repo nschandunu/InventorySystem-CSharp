@@ -30,21 +30,22 @@
         {
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtRepass = new System.Windows.Forms.TextBox();
+            this.txtPDes = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtPass = new System.Windows.Forms.TextBox();
-            this.txtFullName = new System.Windows.Forms.TextBox();
+            this.txtPPrice = new System.Windows.Forms.TextBox();
+            this.txtPQty = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.txtPName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboQty = new System.Windows.Forms.ComboBox();
+            this.comboCat = new System.Windows.Forms.ComboBox();
+            this.lblPid = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -70,13 +71,13 @@
             this.panel2.Size = new System.Drawing.Size(574, 10);
             this.panel2.TabIndex = 29;
             // 
-            // txtRepass
+            // txtPDes
             // 
-            this.txtRepass.Location = new System.Drawing.Point(163, 201);
-            this.txtRepass.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRepass.Name = "txtRepass";
-            this.txtRepass.Size = new System.Drawing.Size(371, 20);
-            this.txtRepass.TabIndex = 28;
+            this.txtPDes.Location = new System.Drawing.Point(163, 201);
+            this.txtPDes.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPDes.Name = "txtPDes";
+            this.txtPDes.Size = new System.Drawing.Size(371, 20);
+            this.txtPDes.TabIndex = 28;
             // 
             // label6
             // 
@@ -119,6 +120,7 @@
             this.btnUpdate.TabIndex = 25;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnClear
             // 
@@ -134,6 +136,7 @@
             this.btnClear.TabIndex = 24;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // label5
             // 
@@ -146,21 +149,21 @@
             this.label5.TabIndex = 22;
             this.label5.Text = "Category :";
             // 
-            // txtPass
+            // txtPPrice
             // 
-            this.txtPass.Location = new System.Drawing.Point(163, 160);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(371, 20);
-            this.txtPass.TabIndex = 21;
+            this.txtPPrice.Location = new System.Drawing.Point(163, 160);
+            this.txtPPrice.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPPrice.Name = "txtPPrice";
+            this.txtPPrice.Size = new System.Drawing.Size(371, 20);
+            this.txtPPrice.TabIndex = 21;
             // 
-            // txtFullName
+            // txtPQty
             // 
-            this.txtFullName.Location = new System.Drawing.Point(163, 117);
-            this.txtFullName.Margin = new System.Windows.Forms.Padding(2);
-            this.txtFullName.Name = "txtFullName";
-            this.txtFullName.Size = new System.Drawing.Size(371, 20);
-            this.txtFullName.TabIndex = 19;
+            this.txtPQty.Location = new System.Drawing.Point(163, 117);
+            this.txtPQty.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPQty.Name = "txtPQty";
+            this.txtPQty.Size = new System.Drawing.Size(371, 20);
+            this.txtPQty.TabIndex = 19;
             // 
             // label3
             // 
@@ -173,13 +176,13 @@
             this.label3.TabIndex = 18;
             this.label3.Text = "Quantity :";
             // 
-            // txtUserName
+            // txtPName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(163, 71);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(371, 20);
-            this.txtUserName.TabIndex = 17;
+            this.txtPName.Location = new System.Drawing.Point(163, 71);
+            this.txtPName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPName.Name = "txtPName";
+            this.txtPName.Size = new System.Drawing.Size(371, 20);
+            this.txtPName.TabIndex = 17;
             // 
             // label2
             // 
@@ -227,32 +230,43 @@
             this.panel1.Size = new System.Drawing.Size(574, 43);
             this.panel1.TabIndex = 15;
             // 
-            // comboQty
+            // comboCat
             // 
-            this.comboQty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboQty.FormattingEnabled = true;
-            this.comboQty.Location = new System.Drawing.Point(163, 240);
-            this.comboQty.Name = "comboQty";
-            this.comboQty.Size = new System.Drawing.Size(371, 21);
-            this.comboQty.TabIndex = 30;
+            this.comboCat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboCat.FormattingEnabled = true;
+            this.comboCat.Location = new System.Drawing.Point(163, 240);
+            this.comboCat.Name = "comboCat";
+            this.comboCat.Size = new System.Drawing.Size(371, 21);
+            this.comboCat.TabIndex = 30;
+            // 
+            // lblPid
+            // 
+            this.lblPid.AutoSize = true;
+            this.lblPid.Location = new System.Drawing.Point(73, 300);
+            this.lblPid.Name = "lblPid";
+            this.lblPid.Size = new System.Drawing.Size(54, 13);
+            this.lblPid.TabIndex = 31;
+            this.lblPid.Text = "product id";
+            this.lblPid.Visible = false;
             // 
             // ProductModuleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(574, 344);
-            this.Controls.Add(this.comboQty);
+            this.Controls.Add(this.lblPid);
+            this.Controls.Add(this.comboCat);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.txtRepass);
+            this.Controls.Add(this.txtPDes);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtPass);
-            this.Controls.Add(this.txtFullName);
+            this.Controls.Add(this.txtPPrice);
+            this.Controls.Add(this.txtPQty);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtUserName);
+            this.Controls.Add(this.txtPName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
@@ -272,20 +286,21 @@
 
         private System.Windows.Forms.PictureBox pictureBoxClose;
         private System.Windows.Forms.Panel panel2;
-        public System.Windows.Forms.TextBox txtRepass;
+        public System.Windows.Forms.TextBox txtPDes;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.Button btnSave;
         public System.Windows.Forms.Button btnUpdate;
         public System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label label5;
-        public System.Windows.Forms.TextBox txtPass;
-        public System.Windows.Forms.TextBox txtFullName;
+        public System.Windows.Forms.TextBox txtPPrice;
+        public System.Windows.Forms.TextBox txtPQty;
         private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.TextBox txtUserName;
+        public System.Windows.Forms.TextBox txtPName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
-        public System.Windows.Forms.ComboBox comboQty;
+        public System.Windows.Forms.ComboBox comboCat;
+        public System.Windows.Forms.Label lblPid;
     }
 }
