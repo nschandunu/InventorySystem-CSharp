@@ -26,8 +26,7 @@ namespace SmartInventoryTracker
         {
             int i = 0;
             dgvProduct.Rows.Clear();
-            cm = new SqlCommand("SELECT * FROM tbProduct", con);
-            //cm = new SqlCommand("SELECT * FROM tbProduct WHERE CONCAT(pid, pname, pprice, pdescription, pcategory) LIKE '%" + txtSearch.Text + "%'", con);
+            cm = new SqlCommand("SELECT * FROM tbProduct WHERE CONCAT(pid, pname, pprice, pdescription, pcategory) LIKE '%" + txtSearch.Text + "%'", con);
             con.Open();
             dr = cm.ExecuteReader();
             while (dr.Read())
@@ -76,6 +75,11 @@ namespace SmartInventoryTracker
                     MessageBox.Show("Record has been successfully deleted!");
                 }
             }
+            LoadProduct();
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
             LoadProduct();
         }
     }

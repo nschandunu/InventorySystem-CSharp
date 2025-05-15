@@ -95,7 +95,7 @@ namespace SmartInventoryTracker
                 if (MessageBox.Show("Are you sure you want to update this product?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
 
-                    //cm = new SqlCommand("UPDATE tbProduct SET pname = @pname, pqty=@pqty, pprice=@pprice, pdescription=@pdescription, pcategory=@pcategory WHERE pid LIKE '" + lblPid.Text + "' ", con);
+                    cm = new SqlCommand("UPDATE tbProduct SET pname = @pname, pqty=@pqty, pprice=@pprice, pdescription=@pdescription, pcategory=@pcategory WHERE pid LIKE '" + lblPid.Text + "' ", con);
                     cm.Parameters.AddWithValue("@pname", txtPName.Text);
                     cm.Parameters.AddWithValue("@pqty", Convert.ToInt16(txtPQty.Text));
                     cm.Parameters.AddWithValue("@pprice", Convert.ToInt16(txtPPrice.Text));
