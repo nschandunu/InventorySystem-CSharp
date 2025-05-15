@@ -8,11 +8,12 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>SmartInventoryTracker</RootNamespace>
     <AssemblyName>SmartInventoryTracker</AssemblyName>
-    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <PreferNativeArm64>true</PreferNativeArm64>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,8 +34,13 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app1.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -47,22 +53,96 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryForm.Designer.cs">
+      <DependentUpon>CategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryModuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryModuleForm.Designer.cs">
+      <DependentUpon>CategoryModuleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomerButton.Designer.cs">
+      <DependentUpon>CustomerButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerModuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerModuleForm.Designer.cs">
+      <DependentUpon>CustomerModuleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserModuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserModuleForm.Designer.cs">
+      <DependentUpon>UserModuleForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CategoryForm.resx">
+      <DependentUpon>CategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryModuleForm.resx">
+      <DependentUpon>CategoryModuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerButton.resx">
+      <DependentUpon>CustomerButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerModuleForm.resx">
+      <DependentUpon>CustomerModuleForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserModuleForm.resx">
+      <DependentUpon>UserModuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="app1.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -89,6 +169,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="icons\close_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\files.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\files_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\box2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\cart2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Categorize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\categorize2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\customer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\users2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\plus3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\plus4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
