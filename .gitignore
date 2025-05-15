@@ -1,14 +1,38 @@
-.vs/
+# User-specific files
 *.user
 *.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
 bin/
 obj/
+[Dd]ebug/
+[Rr]elease/
 *.exe
 *.dll
 *.pdb
 *.cache
 *.log
-*.manifest
 *.resources
+
+# Databases
 *.db
 *.sqlite
+
+# Visual Studio
+.vs/
+.vscode/
+.idea/
+TestResults/
+*.vspscc
+*.vssscc
+
+# NuGet
+packages/
+*.nupkg
+
+# Rider/ReSharper
+.resharper*/
+_ReSharper*/
+*.DotSettings.user
