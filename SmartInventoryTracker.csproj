@@ -53,6 +53,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryForm.Designer.cs">
+      <DependentUpon>CategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryModuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryModuleForm.Designer.cs">
+      <DependentUpon>CategoryModuleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -97,6 +109,12 @@
     <Compile Include="UserModuleForm.Designer.cs">
       <DependentUpon>UserModuleForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CategoryForm.resx">
+      <DependentUpon>CategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryModuleForm.resx">
+      <DependentUpon>CategoryModuleForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerButton.resx">
       <DependentUpon>CustomerButton.cs</DependentUpon>
     </EmbeddedResource>

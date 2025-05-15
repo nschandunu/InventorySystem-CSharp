@@ -205,6 +205,7 @@
             this.Name = "CustomerModuleForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CustomerModuleForm";
+            this.Load += new System.EventHandler(this.CustomerModuleForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

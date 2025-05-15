@@ -92,5 +92,10 @@ namespace SmartInventoryTracker
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void CustomerModuleForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
