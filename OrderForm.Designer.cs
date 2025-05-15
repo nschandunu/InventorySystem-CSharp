@@ -44,9 +44,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnAdd = new SmartInventoryTracker.CustomerButton();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnAdd = new SmartInventoryTracker.CustomerButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
@@ -90,6 +90,7 @@
             this.dgvUser.EnableHeadersVisualStyles = false;
             this.dgvUser.Location = new System.Drawing.Point(0, 0);
             this.dgvUser.Name = "dgvUser";
+            this.dgvUser.RowHeadersVisible = false;
             this.dgvUser.RowHeadersWidth = 82;
             this.dgvUser.RowTemplate.Height = 33;
             this.dgvUser.Size = new System.Drawing.Size(1179, 608);
@@ -207,19 +208,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Manage Order";
             // 
-            // btnAdd
-            // 
-            this.btnAdd.Image = global::SmartInventoryTracker.Properties.Resources.plus3;
-            this.btnAdd.ImageHover = global::SmartInventoryTracker.Properties.Resources.plus4;
-            this.btnAdd.ImageNormal = global::SmartInventoryTracker.Properties.Resources.plus3;
-            this.btnAdd.Location = new System.Drawing.Point(1089, 5);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(34, 30);
-            this.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnAdd.TabIndex = 19;
-            this.btnAdd.TabStop = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
             // dataGridViewImageColumn1
             // 
             this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -235,6 +223,19 @@
             this.dataGridViewImageColumn2.Image = global::SmartInventoryTracker.Properties.Resources.Delete;
             this.dataGridViewImageColumn2.MinimumWidth = 10;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Image = global::SmartInventoryTracker.Properties.Resources.plus3;
+            this.btnAdd.ImageHover = global::SmartInventoryTracker.Properties.Resources.plus4;
+            this.btnAdd.ImageNormal = global::SmartInventoryTracker.Properties.Resources.plus3;
+            this.btnAdd.Location = new System.Drawing.Point(1089, 5);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(34, 30);
+            this.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnAdd.TabIndex = 19;
+            this.btnAdd.TabStop = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // OrderForm
             // 

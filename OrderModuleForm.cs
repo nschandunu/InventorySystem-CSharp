@@ -81,15 +81,15 @@ namespace SmartInventoryTracker
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
             //GetQty();
-            if (Convert.ToInt16(numericUpDown1.Value) > qty)
+            if (Convert.ToInt16(UDQty.Value) > qty)
             {
                 MessageBox.Show("Instock quantity is not enough!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                numericUpDown1.Value = numericUpDown1.Value - 1;
+                UDQty.Value = UDQty.Value - 1;
                 return;
             }
-            if (Convert.ToInt16(numericUpDown1.Value) > 0)
+            if (Convert.ToInt16(UDQty.Value) > 0)
             {
-                int total = Convert.ToInt16(txtPrice.Text) * Convert.ToInt16(numericUpDown1.Value);
+                int total = Convert.ToInt16(txtPrice.Text) * Convert.ToInt16(UDQty.Value);
                 txtTotal.Text = total.ToString();
             }
         }
@@ -106,6 +106,80 @@ namespace SmartInventoryTracker
             txtPName.Text = dgvProduct.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtPrice.Text = dgvProduct.Rows[e.RowIndex].Cells[4].Value.ToString();
             qty = Convert.ToInt16(dgvProduct.Rows[e.RowIndex].Cells[3].Value.ToString());
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtCId.Text == "")
+                {
+                    MessageBox.Show("Please select customer!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                if (txtPid.Text == "")
+                {
+                    MessageBox.Show("Please select product!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                if (MessageBox.Show("Are you sure you want to insert this order?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+
+                    cm = new SqlCommand("INSERT INTO tbOrder(odate, pid, cid, qty, price, total)VALUES(@odate, @pid, @cid, @qty, @price, @total)", con);
+                    cm.Parameters.AddWithValue("@odate", dtOrder.Value);
+                    cm.Parameters.AddWithValue("@pid", Convert.ToInt32(txtPid.Text));
+                    cm.Parameters.AddWithValue("@cid", Convert.ToInt32(txtCId.Text));
+                    cm.Parameters.AddWithValue("@qty", Convert.ToInt32(UDQty.Value));
+                    cm.Parameters.AddWithValue("@price", Convert.ToInt32(txtPrice.Text));
+                    cm.Parameters.AddWithValue("@total", Convert.ToInt32(txtTotal.Text));
+                    con.Open();
+                    cm.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Order has been successfully inserted.");
+
+
+                    cm = new SqlCommand("UPDATE tbProduct SET pqty=(pqty-@pqty) WHERE pid LIKE '" + txtPid.Text + "' ", con);
+                    cm.Parameters.AddWithValue("@pqty", Convert.ToInt16(UDQty.Value));
+
+                    con.Open();
+                    cm.ExecuteNonQuery();
+                    con.Close();
+                    Clear();
+                    LoadProduct();
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void Clear()
+        {
+            txtCId.Clear();
+            txtCName.Clear();
+
+            txtPid.Clear();
+            txtPName.Clear();
+
+            txtPrice.Clear();
+            UDQty.Value = 1;
+            txtTotal.Clear();
+            dtOrder.Value = DateTime.Now;
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            Clear();
+            btnInsert.Enabled = true;
+            btnUpdate.Enabled = false;
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
