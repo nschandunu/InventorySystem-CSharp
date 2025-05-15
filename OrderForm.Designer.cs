@@ -181,10 +181,11 @@
             // 
             // Column2
             // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column2.HeaderText = "Product ID";
             this.Column2.MinimumWidth = 10;
             this.Column2.Name = "Column2";
+            this.Column2.Width = 108;
             // 
             // Column5
             // 
