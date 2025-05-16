@@ -19,6 +19,8 @@ namespace SmartInventoryTracker
         public CustomerModuleForm()
         {
             InitializeComponent();
+            this.AutoScaleMode = AutoScaleMode.Dpi;
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)

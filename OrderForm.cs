@@ -21,6 +21,8 @@ namespace SmartInventoryTracker
         {
             InitializeComponent();
             LoadOrder();
+            this.AutoScaleMode = AutoScaleMode.Dpi;
+
         }
 
         public void LoadOrder()

@@ -23,6 +23,8 @@ namespace SmartInventoryTracker
             InitializeComponent();
             LoadCustomer();
             LoadProduct();
+            this.AutoScaleMode = AutoScaleMode.Dpi;
+
         }
 
         private void label1_Click(object sender, EventArgs e)

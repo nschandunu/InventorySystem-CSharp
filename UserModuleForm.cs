@@ -19,6 +19,8 @@ namespace SmartInventoryTracker
         public UserModuleForm()
         {
             InitializeComponent();
+            this.AutoScaleMode = AutoScaleMode.Dpi;
+
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)

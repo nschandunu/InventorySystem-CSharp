@@ -16,6 +16,8 @@ namespace SmartInventoryTracker
         {
             InitializeComponent();
             timer1.Start();
+            this.AutoScaleMode = AutoScaleMode.Dpi;
+
         }
 
         int startPoint = 0;

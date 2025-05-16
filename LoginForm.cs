@@ -20,6 +20,8 @@ namespace SmartInventoryTracker
         public LoginForm()
         {
             InitializeComponent();
+            this.AutoScaleMode = AutoScaleMode.Dpi;
+
         }
 
         private void checkBoxPass_CheckedChanged(object sender, EventArgs e)
