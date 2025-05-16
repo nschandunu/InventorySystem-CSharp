@@ -50,7 +50,7 @@ namespace SmartInventoryTracker
             moduleForm.btnInsert.Enabled = true;
             moduleForm.btnUpdate.Enabled = false;
             moduleForm.ShowDialog();
-            //LoadOrder();
+            LoadOrder();
         }
     }
 }

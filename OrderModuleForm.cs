@@ -181,5 +181,10 @@ namespace SmartInventoryTracker
         {
 
         }
+
+        private void dgvProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
