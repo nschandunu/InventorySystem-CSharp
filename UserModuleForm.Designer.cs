@@ -89,7 +89,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 100);
+            this.label2.Location = new System.Drawing.Point(33, 85);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 18);
@@ -98,7 +98,7 @@
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(138, 100);
+            this.txtUserName.Location = new System.Drawing.Point(138, 85);
             this.txtUserName.Margin = new System.Windows.Forms.Padding(2);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(396, 20);
@@ -106,7 +106,7 @@
             // 
             // txtFullName
             // 
-            this.txtFullName.Location = new System.Drawing.Point(138, 146);
+            this.txtFullName.Location = new System.Drawing.Point(138, 131);
             this.txtFullName.Margin = new System.Windows.Forms.Padding(2);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(396, 20);
@@ -116,7 +116,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(33, 146);
+            this.label3.Location = new System.Drawing.Point(33, 131);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 18);
@@ -125,17 +125,18 @@
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(138, 189);
+            this.txtPass.Location = new System.Drawing.Point(138, 174);
             this.txtPass.Margin = new System.Windows.Forms.Padding(2);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(396, 20);
             this.txtPass.TabIndex = 6;
+            this.txtPass.UseSystemPasswordChar = true;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(33, 189);
+            this.label4.Location = new System.Drawing.Point(33, 174);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 18);
@@ -144,7 +145,7 @@
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(138, 268);
+            this.txtPhone.Location = new System.Drawing.Point(138, 253);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(2);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(396, 20);
@@ -154,7 +155,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(33, 268);
+            this.label5.Location = new System.Drawing.Point(33, 253);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 18);
@@ -211,17 +212,18 @@
             // 
             // txtRepass
             // 
-            this.txtRepass.Location = new System.Drawing.Point(193, 230);
+            this.txtRepass.Location = new System.Drawing.Point(193, 215);
             this.txtRepass.Margin = new System.Windows.Forms.Padding(2);
             this.txtRepass.Name = "txtRepass";
             this.txtRepass.Size = new System.Drawing.Size(341, 20);
             this.txtRepass.TabIndex = 13;
+            this.txtRepass.UseSystemPasswordChar = true;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(33, 230);
+            this.label6.Location = new System.Drawing.Point(33, 215);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(156, 18);

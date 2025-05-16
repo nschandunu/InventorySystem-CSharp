@@ -41,7 +41,7 @@ namespace SmartInventoryTracker
 
         private void customerButton1_Click(object sender, EventArgs e)
         {
-            
+            openChildForm(new ProductForm());
         }
 
         private void btnUser_Click(object sender, EventArgs e)
@@ -57,6 +57,11 @@ namespace SmartInventoryTracker
         private void btnCategory_Click(object sender, EventArgs e)
         {
             openChildForm(new CategoryForm());
+        }
+
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            openChildForm(new OrderForm());
         }
     }
 }

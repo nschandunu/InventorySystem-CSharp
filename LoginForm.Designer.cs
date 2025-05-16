@@ -55,16 +55,18 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(628, 129);
+            this.panel1.Size = new System.Drawing.Size(314, 67);
             this.panel1.TabIndex = 0;
             // 
             // pictureBoxClose
             // 
             this.pictureBoxClose.Image = global::SmartInventoryTracker.Properties.Resources.close_icon;
-            this.pictureBoxClose.Location = new System.Drawing.Point(574, 0);
+            this.pictureBoxClose.Location = new System.Drawing.Point(287, 0);
+            this.pictureBoxClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxClose.Name = "pictureBoxClose";
-            this.pictureBoxClose.Size = new System.Drawing.Size(51, 45);
+            this.pictureBoxClose.Size = new System.Drawing.Size(26, 23);
             this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxClose.TabIndex = 8;
             this.pictureBoxClose.TabStop = false;
@@ -75,36 +77,40 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(108, 41);
+            this.label3.Location = new System.Drawing.Point(54, 21);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(510, 43);
+            this.label3.Size = new System.Drawing.Size(262, 24);
             this.label3.TabIndex = 7;
             this.label3.Text = "Inventory Management System";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::SmartInventoryTracker.Properties.Resources.icon_120px;
-            this.pictureBox2.Location = new System.Drawing.Point(22, 23);
+            this.pictureBox2.Location = new System.Drawing.Point(11, 12);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox2.Size = new System.Drawing.Size(40, 42);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(53, 454);
+            this.txtName.Location = new System.Drawing.Point(26, 236);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(524, 31);
+            this.txtName.Size = new System.Drawing.Size(264, 20);
             this.txtName.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(46, 414);
+            this.label1.Location = new System.Drawing.Point(23, 215);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 37);
+            this.label1.Size = new System.Drawing.Size(83, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "User Name:";
             // 
@@ -112,17 +118,19 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(49, 514);
+            this.label2.Location = new System.Drawing.Point(24, 267);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 37);
+            this.label2.Size = new System.Drawing.Size(75, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Password:";
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(56, 554);
+            this.txtPass.Location = new System.Drawing.Point(28, 288);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(524, 31);
+            this.txtPass.Size = new System.Drawing.Size(264, 20);
             this.txtPass.TabIndex = 3;
             this.txtPass.UseSystemPasswordChar = true;
             // 
@@ -133,12 +141,14 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(56, 621);
+            this.btnLogin.Location = new System.Drawing.Point(28, 323);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(521, 64);
+            this.btnLogin.Size = new System.Drawing.Size(260, 33);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label4
             // 
@@ -146,18 +156,20 @@
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Impact", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(150, 307);
+            this.label4.Location = new System.Drawing.Point(75, 160);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(303, 53);
+            this.label4.Size = new System.Drawing.Size(154, 27);
             this.label4.TabIndex = 7;
             this.label4.Text = "Welcome back !";
             // 
             // checkBoxPass
             // 
             this.checkBoxPass.AutoSize = true;
-            this.checkBoxPass.Location = new System.Drawing.Point(380, 706);
+            this.checkBoxPass.Location = new System.Drawing.Point(190, 367);
+            this.checkBoxPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBoxPass.Name = "checkBoxPass";
-            this.checkBoxPass.Size = new System.Drawing.Size(197, 29);
+            this.checkBoxPass.Size = new System.Drawing.Size(102, 17);
             this.checkBoxPass.TabIndex = 8;
             this.checkBoxPass.Text = "Show Password";
             this.checkBoxPass.UseVisualStyleBackColor = true;
@@ -167,9 +179,10 @@
             // 
             this.lblClear.AutoSize = true;
             this.lblClear.Font = new System.Drawing.Font("Leelawadee UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClear.Location = new System.Drawing.Point(50, 701);
+            this.lblClear.Location = new System.Drawing.Point(25, 365);
+            this.lblClear.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblClear.Name = "lblClear";
-            this.lblClear.Size = new System.Drawing.Size(68, 32);
+            this.lblClear.Size = new System.Drawing.Size(34, 15);
             this.lblClear.TabIndex = 9;
             this.lblClear.Text = "Clear";
             this.lblClear.Click += new System.EventHandler(this.lblClear_Click);
@@ -177,18 +190,19 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SmartInventoryTracker.Properties.Resources.logo2_120px;
-            this.pictureBox1.Location = new System.Drawing.Point(176, 150);
+            this.pictureBox1.Location = new System.Drawing.Point(88, 78);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(253, 154);
+            this.pictureBox1.Size = new System.Drawing.Size(126, 80);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(628, 952);
+            this.ClientSize = new System.Drawing.Size(314, 495);
             this.Controls.Add(this.lblClear);
             this.Controls.Add(this.checkBoxPass);
             this.Controls.Add(this.label4);
@@ -200,6 +214,7 @@
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
