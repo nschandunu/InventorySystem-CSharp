@@ -16,6 +16,7 @@ namespace SmartInventoryTracker
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Senuka Chandunu\Documents\dbIMS.mdf"";Integrated Security=True;Connect Timeout=30");
         SqlCommand cm = new SqlCommand();
         SqlDataReader dr;
+        int qty = 0;
         public OrderModuleForm()
         {
             InitializeComponent();
@@ -76,11 +77,10 @@ namespace SmartInventoryTracker
             LoadProduct();
         }
 
-        int qty = 0;
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            //GetQty();
+            GetQty();
             if (Convert.ToInt16(UDQty.Value) > qty)
             {
                 MessageBox.Show("Instock quantity is not enough!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -105,7 +105,7 @@ namespace SmartInventoryTracker
             txtPid.Text = dgvProduct.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtPName.Text = dgvProduct.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtPrice.Text = dgvProduct.Rows[e.RowIndex].Cells[4].Value.ToString();
-            qty = Convert.ToInt16(dgvProduct.Rows[e.RowIndex].Cells[3].Value.ToString());
+            //qty = Convert.ToInt16(dgvProduct.Rows[e.RowIndex].Cells[3].Value.ToString());
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -173,8 +173,19 @@ namespace SmartInventoryTracker
         private void btnClear_Click(object sender, EventArgs e)
         {
             Clear();
-            btnInsert.Enabled = true;
-            btnUpdate.Enabled = false;
+        }
+
+        public void GetQty()
+        {
+            cm = new SqlCommand("SELECT pqty FROM tbProduct WHERE pid='" + txtPid.Text + "'", con);
+            con.Open();
+            dr = cm.ExecuteReader();
+            while (dr.Read())
+            {
+                qty = Convert.ToInt32(dr[0].ToString());
+            }
+            dr.Close();
+            con.Close();
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -186,5 +197,12 @@ namespace SmartInventoryTracker
         {
 
         }
+
+        //private void btnUpdate_Click(object sender, EventArgs e)
+        //{
+
+        //}
+
+
     }
 }
