@@ -73,6 +73,16 @@ namespace SmartInventoryTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bg_image {
+            get {
+                object obj = ResourceManager.GetObject("bg_image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Box {
             get {
                 object obj = ResourceManager.GetObject("Box", resourceCulture);
@@ -256,6 +266,16 @@ namespace SmartInventoryTracker.Properties {
         internal static System.Drawing.Bitmap plus4 {
             get {
                 object obj = ResourceManager.GetObject("plus4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plusicon {
+            get {
+                object obj = ResourceManager.GetObject("plusicon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
