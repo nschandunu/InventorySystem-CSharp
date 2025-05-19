@@ -36,3 +36,6 @@ packages/
 .resharper*/
 _ReSharper*/
 *.DotSettings.user
+
+#MacOS System
+.DS_Store
