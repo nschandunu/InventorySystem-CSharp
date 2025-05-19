@@ -16,12 +16,14 @@ namespace SmartInventoryTracker
         {
             InitializeComponent();
             timer1.Start();
+            this.AutoScaleMode = AutoScaleMode.Dpi;
+
         }
 
         int startPoint = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
-            startPoint += 2;
+            startPoint += 10;
             progressBar1.Value = startPoint;
             if (progressBar1.Value == 100)
             {

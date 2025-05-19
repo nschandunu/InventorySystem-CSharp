@@ -15,6 +15,7 @@ namespace SmartInventoryTracker
         public MainForm()
         {
             InitializeComponent();
+            this.AutoScaleMode = AutoScaleMode.Dpi;
         }
 
         //to show subform form in mainform
