@@ -48,7 +48,7 @@ namespace SmartInventoryTracker
 
         }
 
-        Func<ChartPoint, string> lablePoint = charpoint => string.Format("{0} ({1:P)", charpoint.Y, charpoint.Participation);
+        Func<ChartPoint, string> lablePoint = charpoint => string.Format("{0} ({1:P})", charpoint.Y, charpoint.Participation);
 
         private void button2_Click(object sender, EventArgs e)
         {
