@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -115,24 +115,24 @@
             // 
             // AnalyticsChart
             // 
-            chartArea1.Name = "ChartArea1";
-            this.AnalyticsChart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.AnalyticsChart.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.AnalyticsChart.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.AnalyticsChart.Legends.Add(legend2);
             this.AnalyticsChart.Location = new System.Drawing.Point(583, 48);
             this.AnalyticsChart.Name = "AnalyticsChart";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "qty";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "price";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "total";
-            this.AnalyticsChart.Series.Add(series1);
-            this.AnalyticsChart.Series.Add(series2);
-            this.AnalyticsChart.Series.Add(series3);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "qty";
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "price";
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "total";
+            this.AnalyticsChart.Series.Add(series4);
+            this.AnalyticsChart.Series.Add(series5);
+            this.AnalyticsChart.Series.Add(series6);
             this.AnalyticsChart.Size = new System.Drawing.Size(539, 374);
             this.AnalyticsChart.TabIndex = 4;
             this.AnalyticsChart.Text = "chart1";
@@ -154,7 +154,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(152, 119);
             this.dataGridView1.TabIndex = 5;
-            this.dataGridView1.Visible = false;
             // 
             // button1
             // 

@@ -37,8 +37,8 @@ namespace SmartInventoryTracker
             AnalyticsChart.Series[1].XValueMember = "price";
             AnalyticsChart.Series[1].YValueMembers = "price";
 
-            AnalyticsChart.Series[0].XValueMember = "total";
-            AnalyticsChart.Series[0].YValueMembers = "total";
+            AnalyticsChart.Series[2].XValueMember = "total";
+            AnalyticsChart.Series[2].YValueMembers = "total";
 
             AnalyticsChart.DataSource = dbIMSDataSet.tbOrder;
             AnalyticsChart.DataBind();
