@@ -32,7 +32,7 @@ namespace SmartInventoryTracker
             Func<ChartPoint, string> lablePoint = charpoint => string.Format("{0} ({1:P})", charpoint.Y, charpoint.Participation);
             SeriesCollection series = new SeriesCollection();
 
-            string connectionString = "";
+            string connectionString = @"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\dbIMS.mdf;Integrated Security=True;Connect Timeout=30";
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 string query = "SELECT Year, Total FROM Revenue";
