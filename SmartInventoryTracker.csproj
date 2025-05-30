@@ -355,6 +355,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>dbIMS.mdf</DependentUpon>
     </Content>
+    <None Include="icons\chart_2.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">

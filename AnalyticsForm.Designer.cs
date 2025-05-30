@@ -60,6 +60,7 @@
             this.yrsData = new SmartInventoryTracker.YrsData();
             this.button2 = new System.Windows.Forms.Button();
             this.pieChart1 = new LiveCharts.WinForms.PieChart();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnAdd = new SmartInventoryTracker.CustomerButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AnalyticsChart)).BeginInit();
@@ -95,6 +96,7 @@
             this.label5.Size = new System.Drawing.Size(31, 15);
             this.label5.TabIndex = 20;
             this.label5.Text = "ADD";
+            this.label5.Visible = false;
             // 
             // label1
             // 
@@ -131,11 +133,11 @@
             this.AnalyticsChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.AnalyticsChart.Legends.Add(legend1);
-            this.AnalyticsChart.Location = new System.Drawing.Point(496, 3);
+            this.AnalyticsChart.Location = new System.Drawing.Point(493, 14);
             this.AnalyticsChart.Name = "AnalyticsChart";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
-            series1.Name = "qty";
+            series1.Name = "stock";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "price";
@@ -145,7 +147,7 @@
             this.AnalyticsChart.Series.Add(series1);
             this.AnalyticsChart.Series.Add(series2);
             this.AnalyticsChart.Series.Add(series3);
-            this.AnalyticsChart.Size = new System.Drawing.Size(671, 408);
+            this.AnalyticsChart.Size = new System.Drawing.Size(674, 399);
             this.AnalyticsChart.TabIndex = 4;
             this.AnalyticsChart.Text = "chart1";
             // 
@@ -291,11 +293,20 @@
             // 
             // pieChart1
             // 
-            this.pieChart1.Location = new System.Drawing.Point(39, 3);
+            this.pieChart1.Location = new System.Drawing.Point(39, 20);
             this.pieChart1.Name = "pieChart1";
-            this.pieChart1.Size = new System.Drawing.Size(426, 391);
+            this.pieChart1.Size = new System.Drawing.Size(422, 382);
             this.pieChart1.TabIndex = 9;
             this.pieChart1.Text = "pieChart1";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1179, 12);
+            this.panel2.TabIndex = 10;
             // 
             // btnAdd
             // 
@@ -308,6 +319,7 @@
             this.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnAdd.TabIndex = 19;
             this.btnAdd.TabStop = false;
+            this.btnAdd.Visible = false;
             // 
             // AnalyticsForm
             // 
@@ -315,6 +327,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1179, 661);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pieChart1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView2);
@@ -371,5 +384,6 @@
         private YrsData yrsData;
         private System.Windows.Forms.Button button2;
         private LiveCharts.WinForms.PieChart pieChart1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
