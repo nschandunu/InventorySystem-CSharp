@@ -123,14 +123,14 @@ namespace SmartInventoryTracker
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //AnalyticsChart.Series[0].XValueMember = "qty";
-            //AnalyticsChart.Series[0].YValueMembers = "qty";
+            AnalyticsChart.Series[0].XValueMember = "orderid";
+            AnalyticsChart.Series[0].YValueMembers = "orderid";
 
-            AnalyticsChart.Series[1].XValueMember = "price";
-            AnalyticsChart.Series[1].YValueMembers = "price";
+            AnalyticsChart.Series[1].XValueMember = "cid";
+            AnalyticsChart.Series[1].YValueMembers = "cid";
 
-            AnalyticsChart.Series[2].XValueMember = "total";
-            AnalyticsChart.Series[2].YValueMembers = "total";
+            AnalyticsChart.Series[2].XValueMember = "qty";
+            AnalyticsChart.Series[2].YValueMembers = "qty";
 
             AnalyticsChart.DataSource = dbIMSDataSet.tbOrder;
             AnalyticsChart.DataBind();

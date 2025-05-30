@@ -37,6 +37,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnAdd = new SmartInventoryTracker.CustomerButton();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.AnalyticsChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -61,8 +62,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.pieChart1 = new LiveCharts.WinForms.PieChart();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnAdd = new SmartInventoryTracker.CustomerButton();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AnalyticsChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbOrderBindingSource)).BeginInit();
@@ -71,7 +72,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yrsDataBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yrsData)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -108,6 +108,19 @@
             this.label1.Size = new System.Drawing.Size(93, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Analytics";
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Image = global::SmartInventoryTracker.Properties.Resources.plusicon;
+            this.btnAdd.ImageHover = global::SmartInventoryTracker.Properties.Resources.plus4;
+            this.btnAdd.ImageNormal = global::SmartInventoryTracker.Properties.Resources.plus3;
+            this.btnAdd.Location = new System.Drawing.Point(1089, 5);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(34, 30);
+            this.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnAdd.TabIndex = 19;
+            this.btnAdd.TabStop = false;
+            this.btnAdd.Visible = false;
             // 
             // dataGridViewImageColumn1
             // 
@@ -308,19 +321,6 @@
             this.panel2.Size = new System.Drawing.Size(1179, 12);
             this.panel2.TabIndex = 10;
             // 
-            // btnAdd
-            // 
-            this.btnAdd.Image = global::SmartInventoryTracker.Properties.Resources.plusicon;
-            this.btnAdd.ImageHover = global::SmartInventoryTracker.Properties.Resources.plus4;
-            this.btnAdd.ImageNormal = global::SmartInventoryTracker.Properties.Resources.plus3;
-            this.btnAdd.Location = new System.Drawing.Point(1089, 5);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(34, 30);
-            this.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnAdd.TabIndex = 19;
-            this.btnAdd.TabStop = false;
-            this.btnAdd.Visible = false;
-            // 
             // AnalyticsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -343,6 +343,7 @@
             this.Load += new System.EventHandler(this.AnalyticsForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AnalyticsChart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbOrderBindingSource)).EndInit();
@@ -351,7 +352,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yrsDataBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yrsData)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
             this.ResumeLayout(false);
 
         }

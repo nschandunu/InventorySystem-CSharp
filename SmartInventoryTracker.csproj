@@ -355,6 +355,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>dbIMS.mdf</DependentUpon>
     </Content>
+    <None Include="icons\mjy15.jpg" />
     <None Include="icons\chart_2.png" />
   </ItemGroup>
   <ItemGroup>

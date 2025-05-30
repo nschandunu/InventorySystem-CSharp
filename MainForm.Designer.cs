@@ -149,7 +149,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(109, 59);
+            this.label3.Location = new System.Drawing.Point(146, 59);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(295, 24);
             this.label3.TabIndex = 8;
@@ -160,7 +160,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Impact", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(-20, -11);
+            this.label1.Location = new System.Drawing.Point(16, -11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 117);
             this.label1.TabIndex = 9;
