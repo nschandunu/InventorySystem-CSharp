@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,10 +41,6 @@
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.AnalyticsChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dbIMSDataSet = new SmartInventoryTracker.dbIMSDataSet();
-            this.tbOrderBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tbOrderTableAdapter = new SmartInventoryTracker.dbIMSDataSetTableAdapters.tbOrderTableAdapter();
             this.orderidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.odateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,25 +48,29 @@
             this.qtyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnAdd = new SmartInventoryTracker.CustomerButton();
+            this.tbOrderBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dbIMSDataSet = new SmartInventoryTracker.dbIMSDataSet();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tbOrderTableAdapter = new SmartInventoryTracker.dbIMSDataSetTableAdapters.tbOrderTableAdapter();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.yrsData = new SmartInventoryTracker.YrsData();
-            this.yrsDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.revenueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.revenueBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yrsDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yrsData = new SmartInventoryTracker.YrsData();
+            this.button2 = new System.Windows.Forms.Button();
             this.pieChart1 = new LiveCharts.WinForms.PieChart();
+            this.btnAdd = new SmartInventoryTracker.CustomerButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AnalyticsChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbIMSDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbOrderBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbIMSDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yrsData)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yrsDataBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yrsDataBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yrsData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -127,25 +127,25 @@
             // 
             // AnalyticsChart
             // 
-            chartArea6.Name = "ChartArea1";
-            this.AnalyticsChart.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.AnalyticsChart.Legends.Add(legend6);
-            this.AnalyticsChart.Location = new System.Drawing.Point(583, 48);
+            chartArea1.Name = "ChartArea1";
+            this.AnalyticsChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.AnalyticsChart.Legends.Add(legend1);
+            this.AnalyticsChart.Location = new System.Drawing.Point(496, 3);
             this.AnalyticsChart.Name = "AnalyticsChart";
-            series16.ChartArea = "ChartArea1";
-            series16.Legend = "Legend1";
-            series16.Name = "qty";
-            series17.ChartArea = "ChartArea1";
-            series17.Legend = "Legend1";
-            series17.Name = "price";
-            series18.ChartArea = "ChartArea1";
-            series18.Legend = "Legend1";
-            series18.Name = "total";
-            this.AnalyticsChart.Series.Add(series16);
-            this.AnalyticsChart.Series.Add(series17);
-            this.AnalyticsChart.Series.Add(series18);
-            this.AnalyticsChart.Size = new System.Drawing.Size(539, 374);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "qty";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "price";
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "total";
+            this.AnalyticsChart.Series.Add(series1);
+            this.AnalyticsChart.Series.Add(series2);
+            this.AnalyticsChart.Series.Add(series3);
+            this.AnalyticsChart.Size = new System.Drawing.Size(671, 408);
             this.AnalyticsChart.TabIndex = 4;
             this.AnalyticsChart.Text = "chart1";
             // 
@@ -162,35 +162,11 @@
             this.priceDataGridViewTextBoxColumn,
             this.totalDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tbOrderBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(921, 474);
+            this.dataGridView1.Location = new System.Drawing.Point(395, 494);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(246, 106);
+            this.dataGridView1.Size = new System.Drawing.Size(738, 83);
             this.dataGridView1.TabIndex = 5;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(715, 440);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(169, 42);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Load";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // dbIMSDataSet
-            // 
-            this.dbIMSDataSet.DataSetName = "dbIMSDataSet";
-            this.dbIMSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tbOrderBindingSource
-            // 
-            this.tbOrderBindingSource.DataMember = "tbOrder";
-            this.tbOrderBindingSource.DataSource = this.dbIMSDataSet;
-            // 
-            // tbOrderTableAdapter
-            // 
-            this.tbOrderTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.Visible = false;
             // 
             // orderidDataGridViewTextBoxColumn
             // 
@@ -235,17 +211,30 @@
             this.totalDataGridViewTextBoxColumn.HeaderText = "total";
             this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
             // 
-            // btnAdd
+            // tbOrderBindingSource
             // 
-            this.btnAdd.Image = global::SmartInventoryTracker.Properties.Resources.plusicon;
-            this.btnAdd.ImageHover = global::SmartInventoryTracker.Properties.Resources.plus4;
-            this.btnAdd.ImageNormal = global::SmartInventoryTracker.Properties.Resources.plus3;
-            this.btnAdd.Location = new System.Drawing.Point(1089, 5);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(34, 30);
-            this.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnAdd.TabIndex = 19;
-            this.btnAdd.TabStop = false;
+            this.tbOrderBindingSource.DataMember = "tbOrder";
+            this.tbOrderBindingSource.DataSource = this.dbIMSDataSet;
+            // 
+            // dbIMSDataSet
+            // 
+            this.dbIMSDataSet.DataSetName = "dbIMSDataSet";
+            this.dbIMSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(981, 413);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(169, 42);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Load";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // tbOrderTableAdapter
+            // 
+            this.tbOrderTableAdapter.ClearBeforeFill = true;
             // 
             // dataGridView2
             // 
@@ -255,37 +244,12 @@
             this.yearDataGridViewTextBoxColumn,
             this.totalDataGridViewTextBoxColumn1});
             this.dataGridView2.DataSource = this.revenueBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 381);
+            this.dataGridView2.Location = new System.Drawing.Point(12, 476);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(426, 101);
             this.dataGridView2.TabIndex = 7;
+            this.dataGridView2.Visible = false;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(444, 440);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(169, 42);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Load";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // yrsData
-            // 
-            this.yrsData.DataSetName = "YrsData";
-            this.yrsData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // yrsDataBindingSource
-            // 
-            this.yrsDataBindingSource.DataSource = this.yrsData;
-            this.yrsDataBindingSource.Position = 0;
-            // 
-            // revenueBindingSource
-            // 
-            this.revenueBindingSource.DataMember = "Revenue";
-            this.revenueBindingSource.DataSource = this.yrsDataBindingSource;
             // 
             // yearDataGridViewTextBoxColumn
             // 
@@ -299,18 +263,57 @@
             this.totalDataGridViewTextBoxColumn1.HeaderText = "Total";
             this.totalDataGridViewTextBoxColumn1.Name = "totalDataGridViewTextBoxColumn1";
             // 
+            // revenueBindingSource
+            // 
+            this.revenueBindingSource.DataMember = "Revenue";
+            this.revenueBindingSource.DataSource = this.yrsDataBindingSource;
+            // 
+            // yrsDataBindingSource
+            // 
+            this.yrsDataBindingSource.DataSource = this.yrsData;
+            this.yrsDataBindingSource.Position = 0;
+            // 
+            // yrsData
+            // 
+            this.yrsData.DataSetName = "YrsData";
+            this.yrsData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(12, 413);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(169, 42);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Load";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // pieChart1
             // 
-            this.pieChart1.Location = new System.Drawing.Point(12, 3);
+            this.pieChart1.Location = new System.Drawing.Point(39, 3);
             this.pieChart1.Name = "pieChart1";
-            this.pieChart1.Size = new System.Drawing.Size(426, 372);
+            this.pieChart1.Size = new System.Drawing.Size(426, 391);
             this.pieChart1.TabIndex = 9;
             this.pieChart1.Text = "pieChart1";
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Image = global::SmartInventoryTracker.Properties.Resources.plusicon;
+            this.btnAdd.ImageHover = global::SmartInventoryTracker.Properties.Resources.plus4;
+            this.btnAdd.ImageNormal = global::SmartInventoryTracker.Properties.Resources.plus3;
+            this.btnAdd.Location = new System.Drawing.Point(1089, 5);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(34, 30);
+            this.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnAdd.TabIndex = 19;
+            this.btnAdd.TabStop = false;
             // 
             // AnalyticsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1179, 661);
             this.Controls.Add(this.pieChart1);
             this.Controls.Add(this.button2);
@@ -329,13 +332,13 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AnalyticsChart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbIMSDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbOrderBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbIMSDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yrsData)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yrsDataBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yrsDataBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yrsData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
             this.ResumeLayout(false);
 
         }
