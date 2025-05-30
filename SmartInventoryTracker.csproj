@@ -181,6 +181,14 @@
     <Compile Include="WelcomeForm.Designer.cs">
       <DependentUpon>WelcomeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="YrsData.cs">
+      <DependentUpon>YrsData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YrsData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YrsData.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AnalyticsForm.resx">
       <DependentUpon>AnalyticsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -258,6 +266,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="YrsData.xsc">
+      <DependentUpon>YrsData.xsd</DependentUpon>
+    </None>
+    <None Include="YrsData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YrsData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="YrsData.xss">
+      <DependentUpon>YrsData.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

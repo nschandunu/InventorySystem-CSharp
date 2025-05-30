@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,12 +53,24 @@
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAdd = new SmartInventoryTracker.CustomerButton();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
+            this.yrsData = new SmartInventoryTracker.YrsData();
+            this.yrsDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.revenueBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pieChart1 = new LiveCharts.WinForms.PieChart();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AnalyticsChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbIMSDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbOrderBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yrsData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yrsDataBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -115,24 +127,24 @@
             // 
             // AnalyticsChart
             // 
-            chartArea2.Name = "ChartArea1";
-            this.AnalyticsChart.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.AnalyticsChart.Legends.Add(legend2);
+            chartArea3.Name = "ChartArea1";
+            this.AnalyticsChart.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.AnalyticsChart.Legends.Add(legend3);
             this.AnalyticsChart.Location = new System.Drawing.Point(583, 48);
             this.AnalyticsChart.Name = "AnalyticsChart";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "qty";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "price";
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "total";
-            this.AnalyticsChart.Series.Add(series4);
-            this.AnalyticsChart.Series.Add(series5);
-            this.AnalyticsChart.Series.Add(series6);
+            series7.ChartArea = "ChartArea1";
+            series7.Legend = "Legend1";
+            series7.Name = "qty";
+            series8.ChartArea = "ChartArea1";
+            series8.Legend = "Legend1";
+            series8.Name = "price";
+            series9.ChartArea = "ChartArea1";
+            series9.Legend = "Legend1";
+            series9.Name = "total";
+            this.AnalyticsChart.Series.Add(series7);
+            this.AnalyticsChart.Series.Add(series8);
+            this.AnalyticsChart.Series.Add(series9);
             this.AnalyticsChart.Size = new System.Drawing.Size(539, 374);
             this.AnalyticsChart.TabIndex = 4;
             this.AnalyticsChart.Text = "chart1";
@@ -150,15 +162,15 @@
             this.priceDataGridViewTextBoxColumn,
             this.totalDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tbOrderBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(1015, 464);
+            this.dataGridView1.Location = new System.Drawing.Point(921, 474);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(152, 119);
+            this.dataGridView1.Size = new System.Drawing.Size(246, 106);
             this.dataGridView1.TabIndex = 5;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(814, 443);
+            this.button1.Location = new System.Drawing.Point(715, 440);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(169, 42);
             this.button1.TabIndex = 6;
@@ -235,11 +247,73 @@
             this.btnAdd.TabIndex = 19;
             this.btnAdd.TabStop = false;
             // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.yearDataGridViewTextBoxColumn,
+            this.totalDataGridViewTextBoxColumn1});
+            this.dataGridView2.DataSource = this.revenueBindingSource;
+            this.dataGridView2.Location = new System.Drawing.Point(12, 440);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(426, 150);
+            this.dataGridView2.TabIndex = 7;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(444, 548);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(169, 42);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Load";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // yrsData
+            // 
+            this.yrsData.DataSetName = "YrsData";
+            this.yrsData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // yrsDataBindingSource
+            // 
+            this.yrsDataBindingSource.DataSource = this.yrsData;
+            this.yrsDataBindingSource.Position = 0;
+            // 
+            // revenueBindingSource
+            // 
+            this.revenueBindingSource.DataMember = "Revenue";
+            this.revenueBindingSource.DataSource = this.yrsDataBindingSource;
+            // 
+            // yearDataGridViewTextBoxColumn
+            // 
+            this.yearDataGridViewTextBoxColumn.DataPropertyName = "Year";
+            this.yearDataGridViewTextBoxColumn.HeaderText = "Year";
+            this.yearDataGridViewTextBoxColumn.Name = "yearDataGridViewTextBoxColumn";
+            // 
+            // totalDataGridViewTextBoxColumn1
+            // 
+            this.totalDataGridViewTextBoxColumn1.DataPropertyName = "Total";
+            this.totalDataGridViewTextBoxColumn1.HeaderText = "Total";
+            this.totalDataGridViewTextBoxColumn1.Name = "totalDataGridViewTextBoxColumn1";
+            // 
+            // pieChart1
+            // 
+            this.pieChart1.Location = new System.Drawing.Point(12, 3);
+            this.pieChart1.Name = "pieChart1";
+            this.pieChart1.Size = new System.Drawing.Size(426, 372);
+            this.pieChart1.TabIndex = 9;
+            this.pieChart1.Text = "pieChart1";
+            // 
             // AnalyticsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1179, 661);
+            this.Controls.Add(this.pieChart1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.AnalyticsChart);
@@ -257,6 +331,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dbIMSDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbOrderBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yrsData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yrsDataBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -281,5 +359,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn qtyDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn yearDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.BindingSource revenueBindingSource;
+        private System.Windows.Forms.BindingSource yrsDataBindingSource;
+        private YrsData yrsData;
+        private System.Windows.Forms.Button button2;
+        private LiveCharts.WinForms.PieChart pieChart1;
     }
 }

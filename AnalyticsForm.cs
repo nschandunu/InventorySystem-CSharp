@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using LiveCharts;
+using LiveCharts.Wpf;
 
 namespace SmartInventoryTracker
 {
@@ -26,13 +28,14 @@ namespace SmartInventoryTracker
         {
             // TODO: This line of code loads data into the 'dbIMSDataSet.tbOrder' table. You can move, or remove it, as needed.
             this.tbOrderTableAdapter.Fill(this.dbIMSDataSet.tbOrder);
+            pieChart1.LegendLocation = LegendLocation.Bottom;
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AnalyticsChart.Series[0].XValueMember = "qty";
-            AnalyticsChart.Series[0].YValueMembers = "qty";
+            //AnalyticsChart.Series[0].XValueMember = "qty";
+            //AnalyticsChart.Series[0].YValueMembers = "qty";
 
             AnalyticsChart.Series[1].XValueMember = "price";
             AnalyticsChart.Series[1].YValueMembers = "price";
@@ -43,6 +46,16 @@ namespace SmartInventoryTracker
             AnalyticsChart.DataSource = dbIMSDataSet.tbOrder;
             AnalyticsChart.DataBind();
 
+        }
+
+        Func<ChartPoint, string> lablePoint = charpoint => string.Format("{0} ({1:P)", charpoint.Y, charpoint.Participation);
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SeriesCollection series = new SeriesCollection();
+            foreach (var obj in yrsData.Revenue)
+                series.Add(new PieSeries() { Title = obj.Year.ToString(), Values = new ChartValues<int> { obj.Total }, DataLabels = true, LabelPoint = lablePoint });
+            pieChart1.Series = series;
         }
     }
 }
