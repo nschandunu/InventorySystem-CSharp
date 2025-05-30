@@ -25,43 +25,93 @@ namespace SmartInventoryTracker
         }
 
 
-        //Func<ChartPoint, string> lablePoint = charpoint => string.Format("{0} ({1:P})", charpoint.Y, charpoint.Participation);
 
-        private void button2_Click(object sender, EventArgs e)
+        private async void button2_Click(object sender, EventArgs e)
         {
-            Func<ChartPoint, string> lablePoint = charpoint => string.Format("{0} ({1:P})", charpoint.Y, charpoint.Participation);
+            Func<ChartPoint, string> labelPoint = chartPoint => string.Format("{0} ({1:P})", chartPoint.Y, chartPoint.Participation);
             SeriesCollection series = new SeriesCollection();
 
-            string connectionString = @"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\dbIMS.mdf;Integrated Security=True;Connect Timeout=30";
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\dbIMS.mdf;Integrated Security=True;Connect Timeout=30";
+
+            try
             {
-                string query = "SELECT Year, Total FROM Revenue";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                conn.Open();
-
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
+                using (SqlConnection conn = new SqlConnection(connectionString))
                 {
-                    string year = reader["Year"].ToString();
-                    int total = Convert.ToInt32(reader["Total"]);
+                    string query = "SELECT Year, Total FROM Revenue";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    await conn.OpenAsync();
 
-                    series.Add(new PieSeries
+                    using (SqlDataReader reader = await cmd.ExecuteReaderAsync())
                     {
-                        Title = year,
-                        Values = new ChartValues<int> { total },
-                        DataLabels = true,
-                        LabelPoint = lablePoint,
-                    });
+                        if (!reader.HasRows)
+                        {
+                            MessageBox.Show("No data found in the Revenue table.");
+                            return;
+                        }
+
+                        while (await reader.ReadAsync())
+                        {
+                            string year = reader["Year"].ToString();
+                            int total = reader["Total"] != DBNull.Value ? Convert.ToInt32(reader["Total"]) : 0;
+
+                            series.Add(new PieSeries
+                            {
+                                Title = year,
+                                Values = new ChartValues<int> { total },
+                                DataLabels = true,
+                                LabelPoint = labelPoint,
+                            });
+                        }
+                    }
                 }
 
-
-                //SeriesCollection series = new SeriesCollection();
-                //foreach (var obj in yrsData.Revenue)
-                //    series.Add(new PieSeries() { Title = obj.Year.ToString(), Values = new ChartValues<int> { obj.Total }, DataLabels = true, LabelPoint = lablePoint });
-                //pieChart1.Series = series;
+                pieChart1.Series = series;
             }
-            pieChart1.Series = series;
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading chart: " + ex.Message);
+            }
         }
+
+
+
+        //Func<ChartPoint, string> lablePoint = charpoint => string.Format("{0} ({1:P})", charpoint.Y, charpoint.Participation);
+
+        //private void button2_Click(object sender, EventArgs e)
+        //{
+        //    Func<ChartPoint, string> lablePoint = charpoint => string.Format("{0} ({1:P})", charpoint.Y, charpoint.Participation);
+        //    SeriesCollection series = new SeriesCollection();
+
+        //    string connectionString = @"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\dbIMS.mdf;Integrated Security=True;Connect Timeout=30";
+        //    using (SqlConnection conn = new SqlConnection(connectionString))
+        //    {
+        //        string query = "SELECT Year, Total FROM Revenue";
+        //        SqlCommand cmd = new SqlCommand(query, conn);
+        //        conn.Open();
+
+        //        SqlDataReader reader = cmd.ExecuteReader();
+        //        while (reader.Read())
+        //        {
+        //            string year = reader["Year"].ToString();
+        //            int total = Convert.ToInt32(reader["Total"]);
+
+        //            series.Add(new PieSeries
+        //            {
+        //                Title = year,
+        //                Values = new ChartValues<int> { total },
+        //                DataLabels = true,
+        //                LabelPoint = lablePoint,
+        //            });
+        //        }
+
+
+        //        //SeriesCollection series = new SeriesCollection();
+        //        //foreach (var obj in yrsData.Revenue)
+        //        //    series.Add(new PieSeries() { Title = obj.Year.ToString(), Values = new ChartValues<int> { obj.Total }, DataLabels = true, LabelPoint = lablePoint });
+        //        //pieChart1.Series = series;
+        //    }
+        //    pieChart1.Series = series;
+        //}
 
         private void AnalyticsForm_Load(object sender, EventArgs e)
         {
