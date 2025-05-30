@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -127,24 +127,24 @@
             // 
             // AnalyticsChart
             // 
-            chartArea3.Name = "ChartArea1";
-            this.AnalyticsChart.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.AnalyticsChart.Legends.Add(legend3);
+            chartArea6.Name = "ChartArea1";
+            this.AnalyticsChart.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.AnalyticsChart.Legends.Add(legend6);
             this.AnalyticsChart.Location = new System.Drawing.Point(583, 48);
             this.AnalyticsChart.Name = "AnalyticsChart";
-            series7.ChartArea = "ChartArea1";
-            series7.Legend = "Legend1";
-            series7.Name = "qty";
-            series8.ChartArea = "ChartArea1";
-            series8.Legend = "Legend1";
-            series8.Name = "price";
-            series9.ChartArea = "ChartArea1";
-            series9.Legend = "Legend1";
-            series9.Name = "total";
-            this.AnalyticsChart.Series.Add(series7);
-            this.AnalyticsChart.Series.Add(series8);
-            this.AnalyticsChart.Series.Add(series9);
+            series16.ChartArea = "ChartArea1";
+            series16.Legend = "Legend1";
+            series16.Name = "qty";
+            series17.ChartArea = "ChartArea1";
+            series17.Legend = "Legend1";
+            series17.Name = "price";
+            series18.ChartArea = "ChartArea1";
+            series18.Legend = "Legend1";
+            series18.Name = "total";
+            this.AnalyticsChart.Series.Add(series16);
+            this.AnalyticsChart.Series.Add(series17);
+            this.AnalyticsChart.Series.Add(series18);
             this.AnalyticsChart.Size = new System.Drawing.Size(539, 374);
             this.AnalyticsChart.TabIndex = 4;
             this.AnalyticsChart.Text = "chart1";
@@ -255,15 +255,16 @@
             this.yearDataGridViewTextBoxColumn,
             this.totalDataGridViewTextBoxColumn1});
             this.dataGridView2.DataSource = this.revenueBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 440);
+            this.dataGridView2.Location = new System.Drawing.Point(12, 381);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(426, 150);
+            this.dataGridView2.Size = new System.Drawing.Size(426, 101);
             this.dataGridView2.TabIndex = 7;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(444, 548);
+            this.button2.Location = new System.Drawing.Point(444, 440);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(169, 42);
             this.button2.TabIndex = 8;

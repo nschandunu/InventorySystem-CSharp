@@ -15,7 +15,7 @@ namespace SmartInventoryTracker
 {
     public partial class AnalyticsForm : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\dbIMS.mdf"";Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\dbIMS.mdf"";Integrated Security=True;Connect Timeout=30");
         //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Senuka Chandunu\Documents\dbIMS.mdf"";Integrated Security=True;Connect Timeout=30");
         //SqlCommand cm = new SqlCommand();
         //SqlDataReader dr;
@@ -56,6 +56,11 @@ namespace SmartInventoryTracker
             foreach (var obj in yrsData.Revenue)
                 series.Add(new PieSeries() { Title = obj.Year.ToString(), Values = new ChartValues<int> { obj.Total }, DataLabels = true, LabelPoint = lablePoint });
             pieChart1.Series = series;
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
