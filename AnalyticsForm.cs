@@ -24,6 +24,45 @@ namespace SmartInventoryTracker
             InitializeComponent();
         }
 
+
+        //Func<ChartPoint, string> lablePoint = charpoint => string.Format("{0} ({1:P})", charpoint.Y, charpoint.Participation);
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Func<ChartPoint, string> lablePoint = charpoint => string.Format("{0} ({1:P})", charpoint.Y, charpoint.Participation);
+            SeriesCollection series = new SeriesCollection();
+
+            string connectionString = "";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string query = "SELECT Year, Total FROM Revenue";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                conn.Open();
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    string year = reader["Year"].ToString();
+                    int total = Convert.ToInt32(reader["Total"]);
+
+                    series.Add(new PieSeries
+                    {
+                        Title = year,
+                        Values = new ChartValues<int> { total },
+                        DataLabels = true,
+                        LabelPoint = lablePoint,
+                    });
+                }
+
+
+                //SeriesCollection series = new SeriesCollection();
+                //foreach (var obj in yrsData.Revenue)
+                //    series.Add(new PieSeries() { Title = obj.Year.ToString(), Values = new ChartValues<int> { obj.Total }, DataLabels = true, LabelPoint = lablePoint });
+                //pieChart1.Series = series;
+            }
+            pieChart1.Series = series;
+        }
+
         private void AnalyticsForm_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dbIMSDataSet.tbOrder' table. You can move, or remove it, as needed.
@@ -48,15 +87,7 @@ namespace SmartInventoryTracker
 
         }
 
-        Func<ChartPoint, string> lablePoint = charpoint => string.Format("{0} ({1:P})", charpoint.Y, charpoint.Participation);
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            SeriesCollection series = new SeriesCollection();
-            foreach (var obj in yrsData.Revenue)
-                series.Add(new PieSeries() { Title = obj.Year.ToString(), Values = new ChartValues<int> { obj.Total }, DataLabels = true, LabelPoint = lablePoint });
-            pieChart1.Series = series;
-        }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
