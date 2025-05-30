@@ -74,5 +74,10 @@ namespace SmartInventoryTracker
         {
             openChildForm(new AnalyticsForm());
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
