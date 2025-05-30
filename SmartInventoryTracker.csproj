@@ -281,5 +281,11 @@
   <ItemGroup>
     <None Include="icons\bg_image.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\chart3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
