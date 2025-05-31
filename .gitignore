@@ -7,9 +7,6 @@
 # Build results
 bin/
 obj/
-[Dd]ebug/
-[Rr]elease/
-*.exe
 *.dll
 *.pdb
 *.cache

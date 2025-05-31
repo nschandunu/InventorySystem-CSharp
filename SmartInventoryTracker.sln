@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35919.96 d17.13
+VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartInventoryTracker", "SmartInventoryTracker.csproj", "{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SK IMS", "setup\SK IMS\SK IMS.vdproj", "{4A635AB1-206E-1863-8A67-71B924487BE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,8 @@ Global
 		{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC8EC6E5-ECFA-40C6-B6BC-8803B048834D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A635AB1-206E-1863-8A67-71B924487BE2}.Debug|Any CPU.ActiveCfg = Debug
+		{4A635AB1-206E-1863-8A67-71B924487BE2}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
