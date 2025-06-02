@@ -34,7 +34,7 @@ It manages products, orders, customers, users, and provides useful analytics for
 ![Login Page](assets/screenshots/login.png) -->
 
 **📦 Orders Tab**
-![Products Tab](assets/screenshots/orders.png)
+![Products Tab](assets/screenshots/orders.jpeg)
 
 **📊 Analytics View**
 ![Analytics](assets/screenshots/data.png)
@@ -42,7 +42,7 @@ It manages products, orders, customers, users, and provides useful analytics for
 ---
 
 ## 📂 Project Structure
-> .
+> 
 
 ---
 
